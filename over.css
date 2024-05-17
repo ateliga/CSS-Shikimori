@@ -1,13 +1,8 @@
-/* Анимация открытия submenu */
-@import url(https://raw.githubusercontent.com/ALTaww/Shikimori-submenu/main/code.css);
-/* Замена стандартных постеров от grin3671 */
-@import url(https://css-club.web.app/css/custom_posters.min.css);
-/* Дополнение */
-@import url(https://raw.githubusercontent.com/ALTaww/Shikimori-posters/main/Update-posters.css);
-/* Добавляем постер в подсказку */
-@import url(https://raw.githubusercontent.com/ALTaww/Shikimori-posters/main/add-poster-to-tooltip.css);
-/*Изменение избранного на маленьких экранах*/
-@import url(https://raw.githubusercontent.com/ALTaww/Shikimori-Modified-favorites/main/code.css);
+@import url(https://raw.githubusercontent.com/ALTaww/Shikimori-submenu/main/code.css);/* Анимация открытия submenu */
+@import url(https://css-club.web.app/css/custom_posters.min.css);/* Замена стандартных постеров от grin3671 */
+@import url(https://raw.githubusercontent.com/ALTaww/Shikimori-posters/main/Update-posters.css);/* Дополнение */
+@import url(https://raw.githubusercontent.com/ALTaww/Shikimori-posters/main/add-poster-to-tooltip.css);/* Добавляем постер в подсказку */
+@import url(https://raw.githubusercontent.com/ALTaww/Shikimori-Modified-favorites/main/code.css);/*Изменение избранного на маленьких экранах*/
 
 @import url("https://raw.githubusercontent.com/ed-main/ed-main.github.io/master/cssfiles/main_code_1.css");
 @import url("https://raw.githubusercontent.com/ed-main/ed-main.github.io/master/cssfiles/main_code_2.css");
