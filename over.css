@@ -113,54 +113,23 @@
 .p-profiles .cc-favourites .c-anime a[href*="z38329-"] .image-cutter::before {
     content: "ㅤДевочка-ЗайкаㅤГлупый Свин";
 }
-/* Аниме 6 — Konosuba */
+/* Аниме 6 — Sousou no Friren */
 /*Вертикальные постеры*/
-[href*="animes/x30831-"], [data-href*="animes/30831/"], [src*="animes/30831/"], [srcset*="animes/30831/"] {
+[href*="animes/52991"], [data-href*="animes/52991"], [src*="animes/52991"], [srcset*="animes/52991"] {
   --show-default: 0;
-  --custom-image: url(https://papik.pro/uploads/posts/2022-03/1646618819_59-papik-pro-p-konosuba-poster-67.png); 
+  --custom-image: url(https://wallpapercave.com/wp/wp13427415.png); 
 }
 /*Горизонтальные постеры*/
-.p-profiles .cc-favourites .c-anime a[href*="animes/x30831-"] .image-cutter {
-    background: url(https://avatars.mds.yandex.net/i?id=bc8863577a681bccb189dde1d0ad55fb_l-7766812-images-thumbs&n=13) no-repeat center / cover;
+.p-profiles .cc-favourites .c-anime a[href*="animes/52991"] .image-cutter {
+    background: url(https://static.zerochan.net/Sousou.no.Frieren.full.4058062.jpg) no-repeat center / cover;
 }
-.p-profiles .cc-favourites .c-anime:hover a[href*="animes/x30831-"] .image-cutter {
-    background: url(https://media.tenor.com/tlP1gAvWPmAAAAAd/kono-suba-anime.gif) no-repeat center / cover;
+.p-profiles .cc-favourites .c-anime:hover a[href*="animes/52991"] .image-cutter {
+    background: url(https://media1.tenor.com/m/1RLCHhzH0loAAAAd/sousou-no-frieren-frieren.gif) no-repeat center / cover;
 }
-.p-profiles .cc-favourites .c-anime a[href*="x30831-"] .image-cutter::before {
-    content: "Коносуба";
+.p-profiles .cc-favourites .c-anime a[href*="animes/52991"] .image-cutter::before {
+    content: "Провожающая Фрирен";
 }
-/* Аниме 7 — Реинкарнация безработного */
-/*Вертикальные постеры*/
-[href*="animes/39535-"], [data-href*="animes/39535/"], [src*="animes/39535/"], [srcset*="animes/39535/"] {
-  --show-default: 0;
-  --custom-image: url(https://avatars.mds.yandex.net/i?id=936e61b33c656cfad3de8180d27aecdf_l-8389306-images-thumbs&n=13); 
-}
-/*Горизонтальные постеры*/
-.p-profiles .cc-favourites .c-anime a[href*="animes/39535-"] .image-cutter {
-    background: url(https://avatars.mds.yandex.net/i?id=e92dd5a0d45f1bb4aa319c6bfcf956c9_l-5222434-images-thumbs&n=13) no-repeat center / cover;
-}
-.p-profiles .cc-favourites .c-anime:hover a[href*="animes/39535-"] .image-cutter {
-    background: url(https://media.tenor.com/30w1DTA-LRIAAAAd/kick-kick-down.gif) no-repeat center / cover;
-}
-.p-profiles .cc-favourites .c-anime a[href*="39535-"] .image-cutter::before {
-    content: "Реинкарнация Безработного";
-}
-/* Аниме 8 — Tokyo Ghoul */
-/*Вертикальные постеры*/
-[href*="animes/22319-"], [data-href*="animes/22319/"], [src*="animes/22319/"], [srcset*="animes/22319/"] {
-  --show-default: 0;
-  --custom-image: url(https://i.pinimg.com/originals/58/b3/d1/58b3d1d4514db539842ad11816aafd55.jpg); 
-}
-/*Горизонтальные постеры*/
-.p-profiles .cc-favourites .c-anime a[href*="animes/22319-"] .image-cutter {
-    background: url(https://avatars.mds.yandex.net/i?id=eb00270f2f22a5426176f1490c84e01d_l-5340812-images-thumbs&n=13) no-repeat center / cover;
-}
-.p-profiles .cc-favourites .c-anime:hover a[href*="animes/22319-"] .image-cutter {
-    background: url(https://media.tenor.com/nSw03_yhHcYAAAAd/jason-kaneki.gif) no-repeat center / cover;
-}
-.p-profiles .cc-favourites .c-anime a[href*="22319-"] .image-cutter::before {
-    content: "Токийский Гуль";
-}
+
 /* Манга 1 — Унеси меня на Луну */
 /*Вертикальные постеры*/
 [href*="mangas/112589-"], [data-href*="mangas/112589"], [src*="mangas/112589"], [srcset*="mangas/112589"] {
@@ -293,11 +262,11 @@ body.p-achievements.p-profiles .l-page {
 :root {
   --font-size-plus: 1px;
 }
-
+/*https://wallpapercave.com/wp/wp13122719.jpg*/
 body:after {
-  background-image: url("https://wallpapercave.com/wp/wp13027086.jpg");
+    background-image: url("https://i.ibb.co/dMdWjyP/wp13268731-frieren-beyond-journeys-end-wallpapers1.jpg");
 }
-
+/*https://wallpapercave.com/wp/wp13027086.jpg*/
 @media screen and (min-width: 1px) {
   .correct-mob-version {
     color: inherit;
@@ -309,43 +278,9 @@ body:after {
     background-image: url("https://wallpapercave.com/wp/wp13027086.jpg");
   }
 }
-/*
-@media screen and (min-width: 1px) {
-  html:root {
-    --white-color: 255, 238, 254;
-    --light-color: 216, 193, 201;
-    --dark-color: 193, 162, 172;
-    --bright-color: 210, 148, 167;
-    --dull-color: 111, 98, 103;
-    --input-color: 111, 91, 100;
-    --hover-bottoms-1: 60, 28, 40;
-    --buttoms-color: 108, 37, 64;
-    --hover-buttoms-2: 156, 98, 25;
-    --very-high-rating: 191, 96, 113;
-    --high-rating: 154, 71, 86;
-    --average-rating: 130, 51, 65;
-    --small-rating: 117, 36, 50;
-    --time-filled: 117, 47, 56;
-    --time-empty: 68, 26, 33;
-    --anime-inprocess: 69, 146, 76;
-    --anime-complete: 41, 107, 47;
-    --manga-inprocess: 189, 15, 86;
-    --manga-complete: 153, 0, 62;
-    --hover-color: 210, 137, 45;
-    --shadows-color: 144, 91, 105;
-    --block-color: 97, 41, 56;
-    --menu-back: 74, 30, 38;
-    --nick-cover: 138, 66, 90;
-    --popup-color: 87, 36, 47;
-    --hundred: 1;
-  }
-}
-*/
-
-
 
 /*On Battle*/
-@media screen and (min-width: 1px) {
+/*@media screen and (min-width: 1px) {
   html:root {
     --white-color: 215, 225, 255;
     --light-color: 172, 194, 234;
@@ -374,7 +309,102 @@ body:after {
     --popup-color: 27, 41, 84;
     --hundred: 1;
   }
+}*/
+/*Gray Silence*/
+/*@media screen and (min-width: 1px) {
+  html:root {
+    --white-color: 255, 255, 255;
+    --light-color: 191, 197, 208;
+    --dark-color: 159, 169, 181;
+    --bright-color: 173, 191, 222;
+    --dull-color: 111, 123, 125;
+    --input-color: 100, 106, 115;
+    --hover-bottoms-1: 35, 37, 43;
+    --buttoms-color: 67, 82, 101;
+    --hover-buttoms-2: 156, 98, 25;
+    --very-high-rating: 144, 159, 179;
+    --high-rating: 108, 130, 146;
+    --average-rating: 83, 99, 115;
+    --small-rating: 57, 67, 78;
+    --time-filled: 74, 91, 103;
+    --time-empty: 28, 30, 33;
+    --anime-inprocess: 69, 146, 76;
+    --anime-complete: 41, 107, 47;
+    --manga-inprocess: 189, 15, 86;
+    --manga-complete: 153, 0, 62;
+    --hover-color: 210, 137, 45;
+    --shadows-color: 121, 140, 171;
+    --block-color: 65, 71, 82;
+    --menu-back: 40, 43, 49;
+    --nick-cover: 81, 94, 103;
+    --popup-color: 57, 63, 72;
+    --hundred: 1;
+  }
+}*/
+/*Yin & Yang*/
+/**/
+@media screen and (min-width: 1px) {
+  html:root {
+    --white-color: 219, 219, 219;
+    --light-color: 184, 184, 184;
+    --dark-color: 155, 155, 155;
+    --bright-color: 217, 217, 217;
+    --dull-color: 116, 116, 116;
+    --input-color: 120, 120, 120;
+    --hover-bottoms-1: 43, 43, 43;
+    --buttoms-color: 74, 74, 74;
+    --hover-buttoms-2: 140, 140, 140;
+    --very-high-rating: 156, 156, 156;
+    --high-rating: 105, 105, 105;
+    --average-rating: 82, 82, 82;
+    --small-rating: 64, 64, 64;
+    --time-filled: 92, 92, 92;
+    --time-empty: 43, 43, 43;
+    --anime-inprocess: 69, 146, 76;
+    --anime-complete: 41, 107, 47;
+    --manga-inprocess: 189, 15, 86;
+    --manga-complete: 153, 0, 62;
+    --hover-color: 255, 153, 51;
+    --shadows-color: 150, 150, 150;
+    --block-color: 69, 69, 69;
+    --menu-back: 21, 21, 21;
+    --nick-cover: 69, 69, 69;
+    --popup-color: 39, 39, 39;
+    --hundred: 1;
+  }
 }
+
+/*Dark Forest*/
+/*@media screen and (min-width: 1px) {
+  html:root {
+    --white-color: 255, 255, 255;
+    --light-color: 199, 199, 199;
+    --dark-color: 171, 171, 171;
+    --bright-color: 218, 95, 88;
+    --dull-color: 134, 102, 96;
+    --input-color: 102, 102, 102;
+    --hover-bottoms-1: 25, 18, 17;
+    --buttoms-color: 25, 24, 23;
+    --hover-buttoms-2: 156, 25, 25;
+    --very-high-rating: 202, 29, 0;
+    --high-rating: 171, 24, 8;
+    --average-rating: 128, 20, 1;
+    --small-rating: 95, 14, 0;
+    --time-filled: 134, 26, 0;
+    --time-empty: 25, 23, 23;
+    --anime-inprocess: 69, 146, 76;
+    --anime-complete: 41, 107, 47;
+    --manga-inprocess: 189, 15, 86;
+    --manga-complete: 153, 0, 62;
+    --hover-color: 183, 69, 56;
+    --shadows-color: 0, 0, 0;
+    --block-color: 35, 35, 35;
+    --menu-back: 9, 9, 9;
+    --nick-cover: 84, 23, 23;
+    --popup-color: 53, 27, 14;
+    --hundred: 1;
+  }
+}*/
 
 
 
