@@ -34,11 +34,6 @@
   --custom-image-border: 12px;
   --small-custom-image-border: 4px;
 }
-/* Аниме Naruto */
-[href*="animes/z20-"], [data-href*="animes/20/"], [src*="animes/20/"], [srcset*="animes/20/"] {
-  --show-default: 0;
-  --custom-image: url(https://avatars.mds.yandex.net/i?id=5d695e7e6b50b9feb8c346fe7045bb6e_l-8221351-images-thumbs&n=13);
-}
 /*Кликабельность постеров на телефоне*/
 @media screen and (max-width: 1199px) {
   .p-profiles .cc-favourites a, .b-achievement .c-image .inner a {
@@ -121,7 +116,7 @@
 }
 /*Горизонтальные постеры*/
 .p-profiles .cc-favourites .c-anime a[href*="animes/52991"] .image-cutter {
-    background: url(https://static.zerochan.net/Sousou.no.Frieren.full.4058062.jpg) no-repeat center / cover;
+    background: url(https://i.ibb.co/gycKPzg/image.png) no-repeat center / cover;
 }
 .p-profiles .cc-favourites .c-anime:hover a[href*="animes/52991"] .image-cutter {
     background: url(https://media1.tenor.com/m/1RLCHhzH0loAAAAd/sousou-no-frieren-frieren.gif) no-repeat center / cover;
@@ -129,6 +124,39 @@
 .p-profiles .cc-favourites .c-anime a[href*="animes/52991"] .image-cutter::before {
     content: "Провожающая Фрирен";
 }
+/* Аниме 7 — Darling in the FranXX */
+/*Вертикальные*/
+[href*="animes/35849"], [data-href*="animes/35849"], [src*="animes/35849"], [srcset*="animes/35849"] {
+  --show-default: 0;
+  --custom-image: url(https://wallpapercave.com/wp/wp5523732.jpg);
+}
+/*Горизонтальные постеры*/
+.p-profiles .cc-favourites .c-anime a[href*="animes/35849"] .image-cutter {
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnWbOonhzrzBfvLKBXI9g7Be5wbIhoGLWQFSvk_dETlw&s) no-repeat center / cover;
+}
+.p-profiles .cc-favourites .c-anime:hover a[href*="animes/35849"] .image-cutter {
+    background: url(https://media1.tenor.com/m/W_FS0NckBFkAAAAC/anime-tap.gif) no-repeat center / cover;
+}
+.p-profiles .cc-favourites .c-anime a[href*="35849"] .image-cutter::before {
+    content: "Милый во Франксе";
+}
+/* Аниме 7 — Darling in the FranXX */
+/*Вертикальные*/
+[href*="animes/33352"], [data-href*="animes/33352"], [src*="animes/33352"], [srcset*="animes/33352"] {
+  --show-default: 0;
+  --custom-image: url(https://wallpapercave.com/wp/wp10455596.jpg);
+}
+/*Горизонтальные постеры*/
+.p-profiles .cc-favourites .c-anime a[href*="animes/33352"] .image-cutter {
+    background: url(https://i.ibb.co/XsYXjPc/Screenshot-2024-05-24-00-48-19-542-com-android-chrome.jpg ) no-repeat center / cover;
+}
+.p-profiles .cc-favourites .c-anime:hover a[href*="animes/33352"] .image-cutter {
+    background: url(https://media1.tenor.com/m/m-_a1L3-3NAAAAAd/violet-evergarden-anime.gif) no-repeat center / cover;
+}
+.p-profiles .cc-favourites .c-anime a[href*="33352"] .image-cutter::before {
+    content: "Вайолет Эвергарден";
+}
+/*   https://i.ibb.co/XsYXjPc/Screenshot-2024-05-24-00-48-19-542-com-android-chrome.jpg      https://wallpapercave.com/wp/wp11397677.jpg     */
 
 /* Манга 1 — Унеси меня на Луну */
 /*Вертикальные постеры*/
@@ -226,7 +254,7 @@
 .p-profiles .cc-favourites .c-character a[href*="14-"] .image-decor::before {
     content: "Итачи Учиха";
 }
-/* Персонаж 3 — Tsukasa Yuzaki */
+/* Персонаж 6 — Tsukasa Yuzaki */
 /*Вертикальные постеры*/
 [href*="characters/163271-"], [data-href*="characters/163271"], [src*="characters/163271"], [srcset*="characters/163271"] {
   --show-default: 0;
@@ -242,8 +270,39 @@
 .p-profiles .cc-favourites .c-character a[href*="characters/163271-"] .image-decor::before {
     content: "Цукаса Юдзаки";
 }
+/* Персонаж 7 — Zero Two */
+/*Вертикальные постеры*/
+[href*="characters/155679"], [data-href*="characters/155679"], [src*="characters/155679"], [srcset*="characters/155679"] {
+  --show-default: 0;
+  --custom-image: url(https://s1.zerochan.net/Zero.Two.600.2300934.jpg);
+}
+/*Горизонтальные постеры*/
+.p-profiles .cc-favourites .c-character a[href*="characters/155679"] .image-cutter {
+    background: url(https://wallpapercave.com/wp/wp11260353.jpg) no-repeat center / cover;
+}
+.p-profiles .cc-favourites .c-character:hover a[href*="characters/155679"] .image-cutter {
+    background: url(https://media.tenor.com/VNghxeOeO18AAAAM/zero-two-nine-iota.gif) no-repeat center / cover;
+}
+.p-profiles .cc-favourites .c-character a[href*="155679"] .image-decor::before {
+    content: "Ноль Два";
+}
+/* Персонаж 8 — Violet Evergarden */
+/*Вертикальные постеры*/
+[href*="characters/141354"], [data-href*="characters/141354"], [src*="characters/141354"], [srcset*="characters/141354/"] {
+  --show-default: 0;
+  --custom-image: url(https://s1.zerochan.net/Violet.Evergarden.%28Character%29.600.2541502.jpg);
+}
+/*Горизонтальные постеры*/
+.p-profiles .cc-favourites .c-character a[href*="characters/141354"] .image-cutter {
+    background: url(https://wallpapercave.com/wp/wp9697303.jpg) no-repeat center / cover;
+}
+.p-profiles .cc-favourites .c-character:hover a[href*="characters/141354"] .image-cutter {
+    background: url(https://media1.tenor.com/m/IfwOEz4qIyQAAAAC/violet-evegarden.gif) no-repeat center / cover;
+}
+.p-profiles .cc-favourites .c-character a[href*="141354"] .image-decor::before {
+    content: "Вайолет Эвергарден";
+}
 
-/*Обои во вкладке достижений*/
 body.p-achievements.p-profiles:after {
   background-image: url(https://images.hdqwalls.com/download/anime-girl-city-lights-4k-j6-1920x1080.jpg);
   background-color: rgba(53, 20, 0, 0.6);
@@ -576,15 +635,16 @@ body {
     margin-bottom: 0px;
   }
   #profiles_show.p-profiles-show .achievements .cc-franchises .b-badge {
-    margin: 3px 2.85% -3.65% 0.5%;
-    right: -5px;
+    margin: 3px 1% 3% 1%;
+    right: auto;
   }
+
   #profiles_show.p-profiles-show .achievements .cc-authors .b-achievement {
-    margin: 15px 0.92% 15px 0.92%;
+    margin: 15px 1% 15px 1%;
   }
   #profiles_show .achievements .c-column:nth-child(1) .cc-achievements .b-achievement,
   #profiles_show .achievements .c-column:nth-child(2) .cc-achievements .b-achievement {
-    width: 36.2%;
+    width: 33%;
   }
 }
 
@@ -594,11 +654,13 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
+    padding: 0 1%;
   }
   #profiles_show.p-profiles-show .achievements .cc-franchises .b-badge {
-    width: 21.6055%;
-    margin: 3px 4.50% -2.35% 0.5%;
-    right: -4px;
+    width: 21%;
+    margin: 3px 3% -2.35% 1%;
+    margin-bottom: 3%;
+    right: auto;
   }
   #profiles_show .achievements .cc-2 > .c-column:nth-child(4) {
     margin-top: -5px;
@@ -610,6 +672,7 @@ body {
     display: block;
   }
 }
+
 @media screen and (max-width: 600px) {
   #profiles_show.p-profiles-show .achievements .cc-franchises .b-badge:nth-child(7), #profiles_show.p-profiles-show .achievements .cc-franchises .b-badge:nth-child(8) {
       display: none;
@@ -633,7 +696,7 @@ body {
 /* margin в обо мне */
 @media screen and (min-width: 1200px) {
   #profiles_show .profile-content .about.block {
-      margin-top: 40px;
+      margin-top: 50px;
   }
 }
 @media screen and (max-width: 960px) {
@@ -727,7 +790,7 @@ body {
   visibility: hidden; /*Скрываем родные постеры*/
 }
 /*Общие, жанровые, авторы пример*/
-.p-profiles .b-achievement[data-hint^="15 просмотренных аниме"] .inner:after {
+.p-profiles .b-achievement[data-hint^="50 просмотренных аниме"] .inner:after {
   box-shadow: 0 0 2px 1px #e4ba54; /*Золотая рамка*/
   background-image: url("https://media.tenor.com/YEdX9c2T2hIAAAAd/your-name-anime-kimi-no-na-wa.gif");
 }
@@ -773,40 +836,18 @@ body {
 .p-achievements-franchise .b-badge[href$="/yahari_ore_no_seishun_love_comedy_wa_machigatteiru"]:hover {
   background-image: url("https://25.media.tumblr.com/47e9219dfee898055a502b07a5abe5e1/tumblr_mlh6zucaZe1r215p2o1_500.gif");
 }
-/*Атака титанов*/
-#profiles_show .cc-franchises .b-badge[href$="/shingeki_no_kyojin"]::after,
-.p-achievements-index .b-badge[href$="/shingeki_no_kyojin"],
-.p-achievements-franchise .b-badge[href$="/shingeki_no_kyojin"] {
-  background-image: url("https://avatars.mds.yandex.net/i?id=913167497ff79e538b8096dcf6495425-3911063-images-thumbs&n=13");
+/*Чудачество любви не помеха*/
+#profiles_show .cc-franchises .b-badge[href$="/chuunibyou_demo_koi_ga_shitai"]::after,
+.p-achievements-index .b-badge[href$="/chuunibyou_demo_koi_ga_shitai"],
+.p-achievements-franchise .b-badge[href$="/chuunibyou_demo_koi_ga_shitai"] {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRvSf_HZFicgLaGifViroLjNRCYlRows4JqgC2cQl9yoQkV5OIySQoG8lXF6OYhUU_mz8&usqp=CAU");
 }
-#profiles_show .cc-franchises .b-badge[href$="/shingeki_no_kyojin"]:hover::after,
-.p-achievements-index .b-badge[href$="/shingeki_no_kyojin"]:hover,
-.p-achievements-franchise .b-badge[href$="/shingeki_no_kyojin"]:hover {
-  background-image: url("https://media.tenor.com/kz08-PWQR5kAAAAd/attack-on.gif");
+#profiles_show .cc-franchises .b-badge[href$="/chuunibyou_demo_koi_ga_shitai"]:hover::after,
+.p-achievements-index .b-badge[href$="/chuunibyou_demo_koi_ga_shitai"]:hover,
+.p-achievements-franchise .b-badge[href$="/chuunibyou_demo_koi_ga_shitai"]:hover {
+  background-image: url("https://25.media.tumblr.com/47e9219dfee898055a502b07a5abe5e1/tumblr_mlh6zucaZe1r215p2o1_500.gif");
 }
-/*Коносуба*/
-#profiles_show .cc-franchises .b-badge[href$="/konosuba"]::after,
-.p-achievements-index .b-badge[href$="/konosuba"],
-.p-achievements-franchise .b-badge[href$="/konosuba"] {
-  background-image: url("https://avatars.mds.yandex.net/i?id=f9f75f8077e07f37ac3bf9c2e725748d_l-7882711-images-thumbs&n=13");
-}
-#profiles_show .cc-franchises .b-badge[href$="/konosuba"]:hover::after,
-.p-achievements-index .b-badge[href$="/konosuba"]:hover,
-.p-achievements-franchise .b-badge[href$="/konosuba"]:hover {
-  background-image: url("https://media.tenor.com/ivABU_fBT_gAAAAd/anime-running.gif");
-}
-/*Кланнад*/
-#profiles_show .cc-franchises .b-badge[href$="/clannad"]::after,
-.p-achievements-index .b-badge[href$="/clannad"],
-.p-achievements-franchise .b-badge[href$="/clannad"] {
-  background-image: url("https://w.forfun.com/fetch/b8/b88519fe0fe35a5999290a53aa2fd147.jpeg");
-}
-#profiles_show .cc-franchises .b-badge[href$="/clannad"]:hover::after,
-.p-achievements-index .b-badge[href$="/clannad"]:hover,
-.p-achievements-franchise .b-badge[href$="/clannad"]:hover {
-  background-image: url("https://media.tenor.com/vrcq1QbP3CAAAAAd/dango-daizaku.gif");
-  background-position-y: 50%;
-}
+
 /*Общие. Жанровые. Авторы.*/
 .p-profiles.p-achievements .b-achievement > .c-image > .inner:after {
    max-width: 105%;
@@ -1244,7 +1285,7 @@ body {
     pointer-events: all;
   }
   #profiles_show .l-page:before {
-    background: url(https://i.ibb.co/JR1HDTS/pngegg-1.png) center top/cover;
+    background: url(https://s3.zerochan.net/240/05/27/2338855.avif) center top/cover;
     left: 50px;
     bottom: 0;
     animation-delay: 1s;
@@ -1269,4 +1310,574 @@ body {
     width: 200.44px;
     animation-delay: 3s;
   }
+}
+/*https://i.ibb.co/kyJ66rG/image-removebg-preview.png*//*https://i.ibb.co/7bzBcz2/pngegg-4.png  https://i.ibb.co/JR1HDTS/pngegg-1.png  https://i.ibb.co/w6dpcHS/pngegg-2.png*/
+/*https://s3.zerochan.net/240/05/27/2338855.avif*/
+
+
+
+
+/*Замена списков на иконки*/
+@media screen and (min-width: 1312px) {
+  .p-user_rates-index .l-content > .mylist {
+    position: fixed;
+    top: 240px;
+  }
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v128/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.p-user_rates-index .l-content > .mylist {
+  position: absolute;
+  top: 64px;
+  right: auto;
+  width: 56px;
+  margin: 0 0 0 -72px;
+  background: rgba(var(--menu-back), 0.7);
+  border-radius: 4px;
+  text-align: left;
+}
+
+.p-user_rates-index .l-content > .mylist a {
+  position: relative;
+  display: block;
+  padding: 8px;
+  margin: 2px 0;
+  border-radius: 4px;
+  color: #5e6988;
+  font-size: 0;
+  font-weight: normal;
+  line-height: 0;
+}
+
+.p-user_rates-index .l-content > .mylist a:hover {
+  text-decoration: none;
+}
+
+.p-user_rates-index .l-content > .mylist a::before {
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.p-user_rates-index .l-content > .mylist a:hover::before, .p-user_rates-index .l-content > .mylist a.selected::before {
+  background-color: rgba(var(--popup-color), 1);
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='planned']::before {
+  content: 'today';
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='watching']::before {
+  content: 'play_arrow';
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='rewatching']::before {
+  content: 'replay';
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='completed']::before {
+  content: 'done';
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='on_hold']::before {
+  content: 'schedule';
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='dropped']::before {
+  content: 'delete';
+}
+.p-user_rates-index .l-content > .mylist a::after {
+  /* Удаляем подписи */
+  display: none; /* Скрываем подписи */
+}
+
+.p-user_rates-index .l-content > .mylist a::after {
+  top: 0;
+  height: 20px;
+  margin: auto 12px;
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='planned']::after {
+  content: 'Запланировано' !important;
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='watching']::after {
+  content: 'Смотрю' !important;
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='rewatching']::after {
+  content: 'Пересматриваю' !important;
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='completed']::after {
+  content: 'Просмотрено' !important;
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='on_hold']::after {
+  content: 'Отложено или Брошено' !important;
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='dropped']::after {
+  content: 'Ближ. Заплан.' !important;
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='watching'][href*="/manga/"]::after {
+  content: 'Читаю' !important;
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='rewatching'][href*="/manga/"]::after {
+  content: 'Перечитываю' !important;
+}
+
+.p-user_rates-index .l-content > .mylist a[data-id='completed'][href*="/manga/"]::after {
+  content: 'Прочитано' !important;
+}
+
+.p-user_rates-index .l-content > .mylist a span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 4px;
+  margin: 6px 4px;
+  background: #5e6988;
+  border-radius: 2px;
+  color: white;
+  font-size: 14px;
+  line-height: .8;
+}
+
+.p-user_rates-index .l-content > .mylist a span::before, .p-user_rates-index .l-content > .mylist a span::after {
+  display: none;
+}
+
+.p-user_rates-index .l-content > .mylist a::before {
+  display: block;
+  flex-shrink: 0;
+  width: 1em !important;
+  font-family: 'Material Icons' !important;
+  font-size: 24px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  letter-spacing: normal;
+  text-transform: none;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  overflow: hidden;
+  color: rgba(var(--light-color), 0.8);
+}
+
+.p-user_rates-index .l-content > .mylist a:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+body#user_rates_index .b-options-floated.mobile-desktop a {
+  margin-left: 0.4em;
+}
+
+.p-user_rates-index .l-content > .mylist a::after {
+  display: block !important;
+  position: absolute;
+  padding: .375rem .75rem;
+  margin: .25rem .75rem;
+  background-color: rgba(var(--popup-color), 0.9);
+  border-radius: .125rem;
+  color: rgb(var(--white-color));
+  font-size: .875rem;
+  line-height: 1.25rem;
+  white-space: nowrap;
+  z-index: 100;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.p-user_rates-index .l-content > .mylist {
+  margin: 0 0 0 -71px;
+  height: auto;
+}
+
+@media screen and (max-width: 1311px) {
+  .p-user_rates-index .l-content > .mylist {
+    width: max-content;
+    position: initial;
+    margin: 0 auto 8px auto;
+  }
+  .p-user_rates-index .l-content > .mylist a:hover::before, .p-user_rates-index .l-content > .mylist a.selected::before {
+    color: rgba(var(--light-color), 1);
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .p-user_rates-index .l-content > .mylist {
+    width: calc(56px * 3);
+  }
+  .p-user_rates-index .b-options-floated.mobile-desktop a {
+    width: auto;
+  }
+}
+.p-user_rates-index .l-content > .mylist a {
+  font-size: 0 !important;
+}
+
+
+
+
+
+
+
+/*Замена названий списков*/
+.b-stats_bar .stat_name[data-type="dropped"] a:before,
+.b-options-floated.mobile-desktop a[data-id="dropped"]:before,
+.list-groups .status-4 .subheadline:before,
+.p-profiles .profile-head .c-history .entry .misc[title*="Брошено"]:before,
+.b-add_to_list .trigger .text .status-name[data-text="Брошено"]:before,
+.b-add_to_list .expanded-options .option .text .status-name[data-text="Брошено"]:before {
+  content: " Ближ. Запланир. ";
+}
+.b-stats_bar .stat_name[data-type="on_hold"] a:before,
+.b-options-floated.mobile-desktop a[data-id="on_hold"]:before,
+.list-groups .status-3 .subheadline:before,
+.b-add_to_list .trigger .text .status-name[data-text="Отложено"]:before,
+.b-add_to_list .expanded-options .option .text .status-name[data-text="Отложено"]:before {
+  content: " Отл. или Брош. ";
+}
+
+.b-stats_bar .stat_name[data-type="on_hold"] a:before, 
+.b-stats_bar .stat_name[data-type="on_hold"] a span,
+.b-stats_bar .stat_name[data-type="dropped"] a:before,
+.b-stats_bar .stat_name[data-type="dropped"] a span {
+    font-size: 12.5px;
+}
+.b-stats_bar .stat_name[data-type="on_hold"] a,
+.b-stats_bar .stat_name[data-type="dropped"] a,
+.b-options-floated.mobile-desktop a[data-id="dropped"], .b-options-floated.mobile-desktop a[data-id="on_hold"],
+.list-groups .status-4 .subheadline, .list-groups .status-3 .subheadline,
+.p-profiles .profile-head .c-history .entry .misc[title*="Брошено"],
+.b-add_to_list .trigger .text .status-name[data-text="Брошено"]:after, .b-add_to_list .trigger .text .status-name[data-text="Отложено"]:after,
+.b-add_to_list .expanded-options .option .text .status-name[data-text="Брошено"]:after, .b-add_to_list .expanded-options .option .text .status-name[data-text="Отложено"]:after {
+    font-size: 0;
+}
+
+/*Уменьшение размера текста на маленьком разрешении*/
+@media screen and (max-width: 1023px) {
+	.b-stats_bar.anime .stat_name[data-type="on_hold"] a:before, .b-stats_bar.manga .stat_name[data-type="on_hold"] a:before, .b-stats_bar.anime .stat_name[data-type="on_hold"] a span, .b-stats_bar.manga .stat_name[data-type="on_hold"] a span, .b-stats_bar.anime .stat_name[data-type="dropped"] a:before, .b-stats_bar.manga .stat_name[data-type="dropped"] a:before, .b-stats_bar.anime .stat_name[data-type="dropped"] a span, .b-stats_bar.manga .stat_name[data-type="dropped"] a span {
+    	font-size: 10px !important;
+	}
+}
+@media screen and (min-width: 1023px) and (max-width: 1200px) {
+  .b-stats_bar.anime .stat_name[data-type="on_hold"] a:before, .b-stats_bar.manga .stat_name[data-type="on_hold"] a:before, .b-stats_bar.anime .stat_name[data-type="on_hold"] a span, .b-stats_bar.manga .stat_name[data-type="on_hold"] a span, .b-stats_bar.anime .stat_name[data-type="dropped"] a:before, .b-stats_bar.manga .stat_name[data-type="dropped"] a:before, .b-stats_bar.anime .stat_name[data-type="dropped"] a span, .b-stats_bar.manga .stat_name[data-type="dropped"] a span {
+    	font-size: 11px !important;
+	}
+}
+
+.b-options-floated.mobile-desktop a[data-id="dropped"]:before,
+.b-options-floated.mobile-desktop a[data-id="dropped"] span, .b-options-floated.mobile-desktop a[data-id="on_hold"] span,
+.b-options-floated.mobile-desktop a[data-id="on_hold"]:before {
+  font-size: 13px;
+}
+
+.list-groups .status-4 .subheadline:before, .list-groups .status-3 .subheadline:before {
+  font-size: 14px;
+}
+
+.p-profiles .profile-head .c-history .entry .misc[title*="Брошено"]:before {
+  display: unset;
+  font-size: 12px;
+}
+
+
+
+
+/*Замена названий списков*/
+/* ---- Отложено  ----  */
+ .b-stats_bar.anime .stat_name[data-type="on_hold"] a:before, .b-stats_bar.manga .stat_name[data-type="on_hold"] a:before {
+    content: " Отложено или Брошено ";
+    font-size: 12.5px;
+}
+.b-stats_bar.anime .stat_name[data-type="on_hold"] a, .b-stats_bar.manga .stat_name[data-type="on_hold"] a {
+    font-size: 0;
+}
+.b-stats_bar.anime .stat_name[data-type="on_hold"] a span, .b-stats_bar.manga .stat_name[data-type="on_hold"] a span {
+    font-size: 12.5px;
+}
+
+/* ---- Брошено  ----  */
+ .b-stats_bar.anime .stat_name[data-type="dropped"] a:before, .b-stats_bar.manga .stat_name[data-type="dropped"] a:before {
+    content: " Ближайшее Запланированное ";
+    font-size: 12.5px;
+}
+ .b-stats_bar.anime .stat_name[data-type="dropped"] a, .b-stats_bar.manga .stat_name[data-type="dropped"] a {
+    font-size: 0;
+}
+ .b-stats_bar.anime .stat_name[data-type="dropped"] a span, .b-stats_bar.manga .stat_name[data-type="dropped"] a span {
+    font-size: 12.5px;
+}
+
+/*Уменьшение размера текста на маленьком разрешении*/
+@media screen and (max-width: 1023px) {
+	.b-stats_bar.anime .stat_name[data-type="on_hold"] a:before, .b-stats_bar.manga .stat_name[data-type="on_hold"] a:before, .b-stats_bar.anime .stat_name[data-type="on_hold"] a span, .b-stats_bar.manga .stat_name[data-type="on_hold"] a span, .b-stats_bar.anime .stat_name[data-type="dropped"] a:before, .b-stats_bar.manga .stat_name[data-type="dropped"] a:before, .b-stats_bar.anime .stat_name[data-type="dropped"] a span, .b-stats_bar.manga .stat_name[data-type="dropped"] a span {
+    	font-size: 10px !important;
+	}
+}
+@media screen and (min-width: 1023px) and (max-width: 1200px) {
+  .b-stats_bar.anime .stat_name[data-type="on_hold"] a:before, .b-stats_bar.manga .stat_name[data-type="on_hold"] a:before, .b-stats_bar.anime .stat_name[data-type="on_hold"] a span, .b-stats_bar.manga .stat_name[data-type="on_hold"] a span, .b-stats_bar.anime .stat_name[data-type="dropped"] a:before, .b-stats_bar.manga .stat_name[data-type="dropped"] a:before, .b-stats_bar.anime .stat_name[data-type="dropped"] a span, .b-stats_bar.manga .stat_name[data-type="dropped"] a span {
+    	font-size: 11px !important;
+	}
+}
+
+/*На странице списка аниме/манги*/
+.b-options-floated.mobile-desktop a[data-id="dropped"], .b-options-floated.mobile-desktop a[data-id="on_hold"] {
+  font-size: 0;
+}
+.b-options-floated.mobile-desktop a[data-id="dropped"]:before {
+  content: "Ближ. Заплан. ";
+  font-size: 13px;
+}
+.b-options-floated.mobile-desktop a[data-id="dropped"] span, .b-options-floated.mobile-desktop a[data-id="on_hold"] span {
+  font-size: 13px;
+}
+.b-options-floated.mobile-desktop a[data-id="on_hold"]:before {
+  content: "Отложено или Брошено ";
+  font-size: 13px;
+}
+
+/*Текст над самим списком*/
+/*Удаляем старый текст*/
+.list-groups .status-4 .subheadline, .list-groups .status-3 .subheadline {
+  font-size: 0;
+}
+/*Брошено*/
+.list-groups .status-4 .subheadline:before {
+  content: "Ближайшее Запланированное";
+  font-size: 14px;
+}
+
+/*Отложено*/
+.list-groups .status-3 .subheadline:before {
+  content: "Отложено или Брошено";
+  font-size: 14px;
+}
+
+/*В расрывающемся списке истории*/
+.p-profiles .profile-head .c-history .entry .misc[title*="Брошено"]:before {
+  display: unset;
+  content: "Ближайшее Запланированное";
+  font-size: 12px;
+}
+.p-profiles .profile-head .c-history .entry .misc[title*="Брошено"] {
+  font-size: 0 !important;
+}
+
+/*Раскрывающаяся менюшка*/
+/*То, что ты выбрал*/
+/*Удаляем старый текст*/
+.b-add_to_list .trigger .text .status-name[data-text="Брошено"]:after, .b-add_to_list .trigger .text .status-name[data-text="Отложено"]:after {
+  font-size: 0;
+}
+/*Добавляем новый, смотри на data-text*/
+.b-add_to_list .trigger .text .status-name[data-text="Брошено"]:before {
+  content: "Ближ. Запланиров.";
+}
+.b-add_to_list .trigger .text .status-name[data-text="Отложено"]:before {
+  content: "Отл. или Брош.";
+}
+/*Список твоих списков*/
+/*Удаляем старый текст*/
+.b-add_to_list .expanded-options .option .text .status-name[data-text="Брошено"]:after, .b-add_to_list .expanded-options .option .text .status-name[data-text="Отложено"]:after {
+  font-size: 0;
+}
+/*Добавляем новый, смотри на data-text*/
+.b-add_to_list .expanded-options .option .text .status-name[data-text="Брошено"]:before {
+  content: "Ближ. Запланированное";
+}
+.b-add_to_list .expanded-options .option .text .status-name[data-text="Отложено"]:before {
+  content: "Отложено или Брошено";
+}
+
+/*Говнокод на говнокоде покрытый*/
+@media screen and (max-width: 767px) {
+  .b-stats_bar .stat_names {
+    display: block;
+  }
+  body#profiles_show .profile-content {
+    margin-top: -165px;
+  }
+  .p-profiles .profile-head .c-info .c-additionals {
+    bottom: -12.9rem;
+  }
+  .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.anime {
+    margin-top: 46px;
+  }
+  .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar.manga {
+    margin-bottom: 144px;
+  }
+  .b-stats_bar.anime .compatibility a:before {
+    top: -218px;
+  }
+}
+/*На странице профиля*/
+#profiles_show .stat_names {
+  background: rgba(var(--menu-back), 0.7);
+  border-radius: 4px;
+  text-align: left;
+  height: auto;
+  width: max-content;
+  position: initial;
+  margin: 0 auto 8px auto;
+}
+
+#profiles_show .stat_names .stat_name a {
+  position: relative;
+  display: block;
+  padding: 8px;
+  margin: 2px 0;
+  border-radius: 4px;
+  color: #5e6988;
+  font-size: 0;
+  font-weight: normal;
+  line-height: 0;
+}
+
+#profiles_show .stat_names .stat_name a:before  {
+  display: block;
+  flex-shrink: 0;
+  width: 1em !important;
+  font-family: 'Material Icons' !important;
+  font-size: 24px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  letter-spacing: normal;
+  text-transform: none;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  overflow: hidden;
+  color: rgba(var(--light-color), 0.8);
+  padding: 8px;
+  border-radius: 50%;
+}
+#profiles_show .stat_names .stat_name a[href*='planned']:before {
+  content: 'today';
+}
+#profiles_show .stat_names .stat_name a[href*='=watching']:before {
+  content: 'play_arrow';
+}
+#profiles_show .stat_names .stat_name a[href*='=rewatching']:before {
+  content: 'replay';
+}
+#profiles_show .stat_names .stat_name a[href*='completed']:before {
+  content: 'done';
+}
+#profiles_show .stat_names .stat_name a[href*='on_hold']:before {
+  content: 'schedule';
+}
+#profiles_show .stat_names .stat_name a[href*='dropped']:before {
+  content: 'delete';
+}
+
+#profiles_show .stat_names .stat_name a:after  {
+  display: block !important;
+  position: absolute;
+  padding: 0.375rem 0.75rem;
+  margin: 0.25rem 0.75rem;
+  background-color: rgba(var(--popup-color), 0.9);
+  border-radius: 0.125rem;
+  color: rgb(var(--white-color));
+  font-size: .875rem;
+  line-height: 1.25rem;
+  white-space: nowrap;
+  z-index: 100;
+  pointer-events: none;
+  opacity: 0;
+  transition: .3s;
+  top: 0;
+  height: 20px;
+}
+#profiles_show .stat_names .stat_name a[href*='planned']:after {
+  content: 'Запланировано';
+}
+#profiles_show .stat_names .stat_name a[href*='=watching']:after {
+  content: 'Смотрю';
+}
+#profiles_show .b-stats_bar.manga .stat_names .stat_name a[href*='=watching']:after {
+  content: 'Читаю';
+}
+#profiles_show .stat_names .stat_name a[href*='completed']:after {
+  content: 'Просмотрено';
+}
+#profiles_show .b-stats_bar.manga .stat_names .stat_name a[href*='completed']:after {
+  content: 'Прочитано';
+}
+#profiles_show .stat_names .stat_name a[href*='=rewatching']:after {
+  content: 'Пересматриваю';
+}
+#profiles_show .b-stats_bar.manga .stat_names .stat_name a[href*='=rewatching']:after {
+  content: 'Перечитываю';
+}
+#profiles_show .stat_names .stat_name a[href*='on_hold']:after {
+  content: 'Отложено';
+}
+#profiles_show .stat_names .stat_name a[href*='dropped']:after {
+  content: 'Ближ. Запланированное';
+}
+
+#profiles_show .b-stats_bar .stat_names .stat_name .size {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 4px;
+  margin: 6px 4px;
+  background: #5e6988;
+  border-radius: 2px;
+  color: white;
+  font-size: 14px;
+  line-height: .8;
+}
+
+#profiles_show .stat_names .stat_name a:hover::before, #profiles_show .stat_names .stat_name a.selected::before {
+  background-color: rgba(var(--popup-color), 1);
+  color: rgba(var(--light-color), 1);
+}
+#profiles_show .stat_names .stat_name a:hover::after {
+  transform: translateX(40px);
+  opacity: .9
+}
+
+.profile-head .c-info .c-lists-info .b-stats_bar .stat_names .stat_name::after {
+  display: none;
 }
