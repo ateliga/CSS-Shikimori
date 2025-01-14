@@ -16,7 +16,7 @@
 
 
 
-
+/*———————————————ИЗБРАННОЕ———————————————*/
 @media screen and (max-width:372px) { /*Устанавливаем нужный медиа запрос (max можно заменить на min)*/
   #profiles_show .cc-favourites .c-column:nth-child(3) { /*Скрываем третье по счёту изображение*/
     display: none;
@@ -60,6 +60,9 @@
 .p-profiles .cc-favourites .c-anime a[href*="z20-"] .image-cutter::before {
     content: "Наруто";
 }
+.p-profiles .cc-favourites .c-anime a[href*="x30831-"] .image-decor::before {
+    content: "Ну база";
+}
 /* Аниме 2 — Твоё имя */
 /*Вертикальные постеры*/
 [href*="animes/32281-"], [data-href*="animes/32281/"], [src*="animes/32281/"], [srcset*="animes/32281/"] {
@@ -75,6 +78,12 @@
 }
 .p-profiles .cc-favourites .c-anime a[href*="32281-"] .image-cutter::before {
     content: "Твоё имя";
+}
+.p-profiles .cc-favourites .c-anime a[href*="x30831-"] .image-decor::before {
+    content: "Ну база";
+}
+.p-profiles .cc-favourites .c-anime a[href*="x30831-"] .image-decor::before {
+    content: "Это супер красивск";
 }
 /* Аниме 4 — Yahari Ore no Seishun Love Comedy wa Machigatteiru */
 /*Вертикальные постеры*/
@@ -116,7 +125,7 @@
 }
 /*Горизонтальные постеры*/
 .p-profiles .cc-favourites .c-anime a[href*="animes/52991"] .image-cutter {
-    background: url(https://i.ibb.co/gycKPzg/image.png) no-repeat center / cover;
+    background: url(https://i.ibb.co/N9sN96J/image.png) no-repeat center / cover;
 }
 .p-profiles .cc-favourites .c-anime:hover a[href*="animes/52991"] .image-cutter {
     background: url(https://media1.tenor.com/m/1RLCHhzH0loAAAAd/sousou-no-frieren-frieren.gif) no-repeat center / cover;
@@ -140,7 +149,7 @@
 .p-profiles .cc-favourites .c-anime a[href*="35849"] .image-cutter::before {
     content: "Милый во Франксе";
 }
-/* Аниме 7 — Darling in the FranXX */
+/* Аниме 8 — Violet Evergarden */
 /*Вертикальные*/
 [href*="animes/33352"], [data-href*="animes/33352"], [src*="animes/33352"], [srcset*="animes/33352"] {
   --show-default: 0;
@@ -156,7 +165,22 @@
 .p-profiles .cc-favourites .c-anime a[href*="33352"] .image-cutter::before {
     content: "Вайолет Эвергарден";
 }
-/*   https://i.ibb.co/XsYXjPc/Screenshot-2024-05-24-00-48-19-542-com-android-chrome.jpg      https://wallpapercave.com/wp/wp11397677.jpg     */
+/* Аниме 9 — Mushoku Tensei */
+/*Вертикальные*/
+[href*="animes/33352"], [data-href*="animes/39535"], [src*="animes/39535"], [srcset*="animes/39535"] {
+  --show-default: 0;
+  --custom-image: url(https://c4.wallpaperflare.com/wallpaper/888/208/60/anime-novel-manga-mushoku-tensei-rudeus-greyrat-hd-wallpaper-preview.jpg);
+}
+/*Горизонтальные постеры*/
+.p-profiles .cc-favourites .c-anime a[href*="animes/39535"] .image-cutter {
+    background: url(https://i.ibb.co/Yk1vwC9/wp8127304.jpg) no-repeat center / cover;
+}
+.p-profiles .cc-favourites .c-anime:hover a[href*="animes/39535"] .image-cutter {
+    background: url(https://media.tenor.com/ZFXhchG4gGsAAAAM/rudeus-sylphiette-ear-lick-mushoku-tensei.gif) no-repeat center / cover;
+}
+.p-profiles .cc-favourites .c-anime a[href*="39535"] .image-cutter::before {
+    content: "Реинкарнация безработного";
+}
 
 /* Манга 1 — Унеси меня на Луну */
 /*Вертикальные постеры*/
@@ -190,6 +214,9 @@
 .p-profiles .cc-favourites .c-character a[href*="118739-"] .image-decor::before {
     content: "Май Сакураджима";
 }
+/*.p-profiles .cc-favourites .c-character a[href*="87275-"] .image-cutter::before {
+    content: "Dead Inside";
+}*/
 /* Персонаж 2 — Sakuta Azusagawa */
 /*Вертикальные постеры*/
 [href*="characters/118733-"], [data-href*="characters/118733/"], [src*="characters/118733/"], [srcset*="characters/118733/"] {
@@ -230,7 +257,7 @@
 }
 /*Горизонтальные постеры*/
 .p-profiles .cc-favourites .c-character a[href*="characters/z17-"] .image-cutter {
-    background: url(https://kalix.club/uploads/posts/2022-12/1671500858_kalix-club-p-oboi-naruto-na-kompyuter-pinterest-3.jpg) no-repeat center / cover;
+    background: url(https://wallpapercave.com/wp/wp13376147.jpg) no-repeat center / cover;
 }
 .p-profiles .cc-favourites .c-character:hover a[href*="characters/z17-"] .image-cutter {
     background: url(https://bipbap.ru/wp-content/uploads/2021/08/9e7b59697d1933f43a3715a72c5dc720529d09a3r1-540-300_hq.gif) no-repeat center / cover;
@@ -302,26 +329,40 @@
 .p-profiles .cc-favourites .c-character a[href*="141354"] .image-decor::before {
     content: "Вайолет Эвергарден";
 }
-
+.p-profiles .cc-favourites .c-character a[href*="141354"] .image-cutter::before {
+    content: "Киборг кукла";
+}
+/* Персонаж 9 — Sylphiette */
+/*Вертикальные постеры*/
+[href*="characters/111337"], [data-href*="characters/111337"], [src*="characters/111337"], [srcset*="characters/111337/"] {
+  --show-default: 0;
+  --custom-image: url(https://i.ibb.co/JmG86Xq/image.png);
+}
+/*Горизонтальные постеры*/
+.p-profiles .cc-favourites .c-character a[href*="characters/111337"] .image-cutter {
+    background: url(https://i.ibb.co/QnMWxHV/1435028.jpg) no-repeat center / cover;
+}
+.p-profiles .cc-favourites .c-character:hover a[href*="characters/111337"] .image-cutter {
+    background: url(https://media.tenor.com/kMpta8X32OMAAAAM/sylphy-fluster-mushoku-sylphy.gif) no-repeat center / cover;
+}
+.p-profiles .cc-favourites .c-character a[href*="111337"] .image-decor::before {
+    content: "Сильфиетта";
+}
+.p-profiles .cc-favourites .c-character a[href*="111337"] .image-cutter::before {
+    content: "Лучшая жена";
+}
 body.p-achievements.p-profiles:after {
   background-image: url(https://images.hdqwalls.com/download/anime-girl-city-lights-4k-j6-1920x1080.jpg);
   background-color: rgba(53, 20, 0, 0.6);
 }
-/*Фон для основной секции*/
-body.p-achievements.p-profiles .l-page {
-  background: rgba(53, 20, 0, 0.5);
-}
-/*Прозрачность не выполненных ачивок*/
-.b-badge.level-0:not(:hover) img {
-  opacity: .7;
-}
+/*———————————————КОНЕЦ ИЗБРАННОГО———————————————*/
 
 /*Увеличение шрифта e-design*/
 @import url(https://raw.githubusercontent.com/ALTaww/Shikimori/main/e-design-increase-the-font.css);
 :root {
   --font-size-plus: 1px;
 }
-/*https://wallpapercave.com/wp/wp13122719.jpg*/
+/*Задний фон*/
 body:after {
     background-image: url("https://i.ibb.co/dMdWjyP/wp13268731-frieren-beyond-journeys-end-wallpapers1.jpg");
 }
@@ -331,10 +372,9 @@ body:after {
     color: inherit;
   }
 }
-
 @media screen and (min-width: 1200px) {
   #profiles_show .profile-head::after {
-    background-image: url("https://wallpapercave.com/wp/wp13027086.jpg");
+    background-image: url("https://i.ibb.co/dMdWjyP/wp13268731-frieren-beyond-journeys-end-wallpapers1.jpg");
   }
 }
 
@@ -466,8 +506,7 @@ body:after {
 }*/
 
 
-
-
+/*———————————————МЕЛОЧИ———————————————*/
 /*Шаринган в левом верхнем углу*/
 .l-top_menu-v2 .logo-container .glyph {
     background-image: url(https://avatanplus.com/files/resources/original/56e09c71a51eb1535d631c0c.png);
@@ -490,11 +529,6 @@ body:after {
     display: none;
   }
 }
-
-
-
-
-
 /*Увеличение аватарки при наведении на меню*/
 .menu-dropdown img {
   transition: transform 1s ease;
@@ -502,10 +536,6 @@ body:after {
 .menu-dropdown.active img  {
   transform: scale(1.15);
 }
-
-
-
-
 /* Анимация появления подсказки */
 .tooltip {
     animation: 0.3s tooltip-animation linear;
@@ -615,6 +645,17 @@ body {
 }
 
 
+
+
+/*———————————————ДОСТИЖЕНИЯ———————————————*/
+/*Фон для основной секции*/
+body.p-achievements.p-profiles .l-page {
+  background: rgba(53, 20, 0, 0.5);
+}
+/*Прозрачность не выполненных ачивок*/
+.b-badge.level-0:not(:hover) img {
+  opacity: .7;
+}
 /*для нормальной ширины сайта 1200px >*/
 @media screen and (min-width: 1200px) {
   #profiles_show .achievements .cc-2 > .c-column:first-child,
@@ -674,34 +715,46 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  #profiles_show.p-profiles-show .achievements .cc-franchises .b-badge:nth-child(7), #profiles_show.p-profiles-show .achievements .cc-franchises .b-badge:nth-child(8) {
+  #profiles_show.p-profiles-show .achievements .cc-franchises .b-badge:nth-child(7),
+  #profiles_show.p-profiles-show .achievements .cc-franchises .b-badge:nth-child(8) {
       display: none;
-	}
+  }
+
   #profiles_show .cc-franchises {
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 4.2%;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 2.2%;
+      grid-row-gap: 13px; /* Добавлен отступ между строками */
       width: 97%;
   }
 }
+
 @media screen and (max-width: 472px) {
-  #profiles_show.p-profiles-show .achievements .cc-franchises .b-badge:nth-child(5), #profiles_show.p-profiles-show .achievements .cc-franchises .b-badge:nth-child(6) {
-    	display: none;
-	}
+  #profiles_show.p-profiles-show .achievements .cc-franchises .b-badge:nth-child(5),
+  #profiles_show.p-profiles-show .achievements .cc-franchises .b-badge:nth-child(6) {
+      display: none;
+  }
+
   #profiles_show .cc-franchises {
       grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 5.2%;
+      grid-column-gap: 2.2%;
+      grid-row-gap: 13px; /* Добавлен отступ между строками */
       width: 97%;
   }
 }
+/*Фикс серого эффекта*/
+.p-profiles .b-badge {
+    filter: none !important;
+}
+
 /* margin в обо мне */
 @media screen and (min-width: 1200px) {
   #profiles_show .profile-content .about.block {
-      margin-top: 50px;
+      margin-top: 15px;
   }
 }
 @media screen and (max-width: 960px) {
   body#profiles_show .about.block {
-      margin-top: 0px;
+      margin-top: 15px;
   }
 }
 
@@ -730,7 +783,7 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .p-profiles-show .achievements .cc-authors .b-achievement {
-    width: 31%;
+    width: 32%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -751,6 +804,16 @@ body {
 }
 
 /*Замена постеров*/
+.p-achievements-index.p-achievements .b-badge,
+.p-achievements-franchise.p-achievements .b-badge { 
+   border-radius: 9px;
+}
+.p-achievements-index .b-badge,
+.p-achievements-franchise .b-badge {  
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
 #profiles_show .cc-franchises .b-badge::after {
   content: "";
   position: absolute;
@@ -840,12 +903,45 @@ body {
 #profiles_show .cc-franchises .b-badge[href$="/chuunibyou_demo_koi_ga_shitai"]::after,
 .p-achievements-index .b-badge[href$="/chuunibyou_demo_koi_ga_shitai"],
 .p-achievements-franchise .b-badge[href$="/chuunibyou_demo_koi_ga_shitai"] {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRvSf_HZFicgLaGifViroLjNRCYlRows4JqgC2cQl9yoQkV5OIySQoG8lXF6OYhUU_mz8&usqp=CAU");
+  background-image: url("https://viewout.ru/games/anime_chudachestvo_ljubvi_ne_pomekha.jpg");
 }
 #profiles_show .cc-franchises .b-badge[href$="/chuunibyou_demo_koi_ga_shitai"]:hover::after,
 .p-achievements-index .b-badge[href$="/chuunibyou_demo_koi_ga_shitai"]:hover,
 .p-achievements-franchise .b-badge[href$="/chuunibyou_demo_koi_ga_shitai"]:hover {
-  background-image: url("https://25.media.tumblr.com/47e9219dfee898055a502b07a5abe5e1/tumblr_mlh6zucaZe1r215p2o1_500.gif");
+  background-image: url("https://media1.tenor.com/m/HsT2PU-m_M8AAAAC/rikka-ow.gif");
+}
+/*Корзинка фруктов*/
+#profiles_show .cc-franchises .b-badge[href$="/fruits_basket"]::after,
+.p-achievements-index .b-badge[href$="/fruits_basket"],
+.p-achievements-franchise .b-badge[href$="/fruits_basket"] {
+  background-image: url("https://wallpapercave.com/wp/wp4673880.jpg");
+}
+#profiles_show .cc-franchises .b-badge[href$="/fruits_basket"]:hover::after,
+.p-achievements-index .b-badge[href$="/fruits_basket"]:hover,
+.p-achievements-franchise .b-badge[href$="/fruits_basket"]:hover {
+  background-image: url("https://media1.tenor.com/m/5zqoVH30cTYAAAAd/tohru-honda-anime.gif");
+}
+/*Коносуба*/
+#profiles_show .cc-franchises .b-badge[href$="/konosuba"]::after,
+.p-achievements-index .b-badge[href$="/konosuba"],
+.p-achievements-franchise .b-badge[href$="/konosuba"] {
+  background-image: url("https://wallpapercave.com/wp/wp7067547.jpg");
+}
+#profiles_show .cc-franchises .b-badge[href$="/konosuba"]:hover::after,
+.p-achievements-index .b-badge[href$="/konosuba"]:hover,
+.p-achievements-franchise .b-badge[href$="/konosuba"]:hover {
+  background-image: url("https://media.tenor.com/Nil6FBpF-roAAAAM/anime-aqua.gif");
+}
+/*Реинкарнация безработного*/
+#profiles_show .cc-franchises .b-badge[href$="/mushoku_tensei"]::after,
+.p-achievements-index .b-badge[href$="/mushoku_tensei"],
+.p-achievements-franchise .b-badge[href$="/mushoku_tensei"] {
+  background-image: url("https://sun1-89.userapi.com/s/v1/ig2/Orl414mJQ0aYlT5qb7RjpuS7WFGWMmeNbizx1jAT211Vi1Fnjidd40BPsSbz99JNIgooaveMEYpa0sD7u0HqMDn2.jpg?quality=95&as=32x23,48x34,72x51,108x77,160x114,240x171,360x256,480x341,540x384,640x455,720x512,1080x768,1280x910,1440x1024,2560x1820&from=bu&u=ZdFjqmV4ZUfyKEyrd5wxXG8HZRQnCgaIuPHVVmy9kcI&cs=807x574");
+}
+#profiles_show .cc-franchises .b-badge[href$="/mushoku_tensei"]:hover::after,
+.p-achievements-index .b-badge[href$="/mushoku_tensei"]:hover,
+.p-achievements-franchise .b-badge[href$="/mushoku_tensei"]:hover {
+  background-image: url("https://media1.tenor.com/m/zLUfSWdZp5cAAAAd/mushoku-tensei-rudeus.gif");
 }
 
 /*Общие. Жанровые. Авторы.*/
@@ -880,12 +976,11 @@ body {
   }
 }
 
-
-.p-profiles .b-achievement[data-hint^="50 просмотренных аниме"] .inner:after {
+.p-profiles .b-achievement[data-hint^="100 просмотренных аниме"] .inner:after {
      box-shadow: 0 0 2px 1px #e4ba54; /*Золотая рамка*/
-   background-image: url("https://kartinki.pibig.info/uploads/posts/2023-04/1681328973_kartinki-pibig-info-p-estetichnie-kartinki-vecher-arti-pinterest-33.jpg");
+   background-image: url("https://wallpapercave.com/wp/wp2260439.jpg");
 }
-.p-profiles .b-achievement[data-hint^="50 просмотренных аниме"]:hover .inner:after {
+.p-profiles .b-achievement[data-hint^="100 просмотренных аниме"]:hover .inner:after {
    background-image: url("https://i.pinimg.com/originals/1d/c3/32/1dc33296ccf1f53aa35c758e05fdc135.gif");
 }
 .p-profiles .b-achievement[data-hint^="Генки"] .inner:after {
@@ -904,12 +999,12 @@ body {
    background-image: url("https://media.tenor.com/iaq02aYAdWcAAAAd/neon-genesis.gif");
 }
 
-.p-profiles .b-achievement[data-hint^="Романтика 1 уровня"] .inner:after {
+.p-profiles .b-achievement[data-hint^="Романтика 1-го уровня"] .inner:after {
    box-shadow: 0 0 2px 1px #54e454;
-   background-image: url("https://avatars.mds.yandex.net/i?id=b6b0a93f79d53cef4f64c5b73992a620_l-5264636-images-thumbs&n=13");
+   background-image: url("https://desu.shikimori.me/system/user_images/thumbnail/969640/14efabc5c7ab27067e66375f5a917a81a9b16d24b85647450104c9f2e13b2cef.jpg");
 }
-.p-profiles .b-achievement[data-hint^="Романтика 1 уровня"]:hover .inner:after {
-   background-image: url("https://media.tenor.com/yKtYfA0mizYAAAAd/my-dress-up-darling-anime-blush.gif");
+.p-profiles .b-achievement[data-hint^="Романтика 1-го уровня"]:hover .inner:after {
+   background-image: url("https://media1.tenor.com/m/lt7pPWLYYOcAAAAC/sousou-no-frieren-frieren.gif");
 }
 
 .p-profiles .b-achievement[data-hint^="Комедия 1 уровня"] .inner:after {
@@ -944,17 +1039,17 @@ body {
    background-image: url("https://media.tenor.com/gYV8ucNbmdkAAAAd/evil-laugh-evil.gif");
 }
 
-.p-profiles .b-achievement[data-hint^="Драма 1 уровня"] .inner:after {
+.p-profiles .b-achievement[data-hint^="Драма 1-го уровня"] .inner:after {
    box-shadow: 0 0 2px 1px #54e454;
-   background-image: url("https://shikimori.me/system/user_images/original/1012284/2229325.jpg");
+   background-image: url("https://1zoom.club/uploads/posts/2023-02/1677570844_1zoom-club-p-les-v-kotorom-mertsayut-svetlyachki-12.jpg");
 }
-.p-profiles .b-achievement[data-hint^="Драма 1 уровня"]:hover .inner:after {
-   background-image: url("https://media.tenor.com/rvKrkSHxRR0AAAAd/violet-evergarden.gif");
+.p-profiles .b-achievement[data-hint^="Драма 1-го уровня"]:hover .inner:after {
+   background-image: url("https://i.gifer.com/Iiuj.mp4");
 }
 #profiles_show .achievements .cc-franchises .b-badge { 
    border-radius: 0.375rem;
 }
-
+/*———————————————КОНЕЦ БЛОКА ДОСТИЖЕНИЙ———————————————*/
 
  /* Анимация основного блока */
 @media screen and (min-width: 1200px) {
@@ -966,10 +1061,6 @@ body {
     animation-timing-function: ease;
   }
 }
-
-
-
-
 
  /* Цвета и фреймы анимации */
  @keyframes box-shadow-animation {
@@ -988,9 +1079,6 @@ body {
   }
 
 
-
-
-
 /* Комменты */
 .b-comments .b-comment {
     padding: 10px 0.5% 0.25% 0.5%;
@@ -999,103 +1087,23 @@ body {
     border-radius: 16px;
     background: rgba(var(--menu-back), 0.8);
 }
-
-
-
-
-
 /*Фикс последнего коммента*/
 .b-comments .b-comment:last-child {
   border: solid 4px rgba(var(--white-color), 0.3) !important;
 }
 
 
-
-
-
-/* Анимация появления подсказки */
-.tooltip {
-    animation: 0.3s tooltip-animation linear;
-}
-@keyframes tooltip-animation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-
-
-
-
-/*Увеличение аватарки при наведении на меню*/
-.menu-dropdown img {
-  transition: transform 1s ease;
-}
-.menu-dropdown.active img  {
-  transform: scale(1.15);
-}  
-
-
-
-
-
-
-/*Крутой выезд подсказки*/
-body {
-  overflow-x: hidden;
-}
-.tooltip:not(.tooltip-left):not([style*="display: none;"]) .tooltip-inner {
-  animation: tooltip-Initial-D 1s ease-in-out;
-}
-@keyframes tooltip-Initial-D {
-  0% {
-    transform: translateX(-1000px);
-    pointer-events: none;
-  }
-  80% {
-    transform: translateX(100px);
-    pointer-events: none;
-  }
-  100% {
-    transform: translateX(0);
-    pointer-events: all;
-  }
-}
-.tooltip-left:not([style*="display: none;"]) .tooltip-inner {
-  animation: tooltip-left-Initial-D 1s ease-in-out;
-}
-@keyframes tooltip-left-Initial-D {
-  0% {
-    transform: translateX(1000px);
-    pointer-events: none;
-  }
-  80% {
-    transform: translateX(-100px);
-    pointer-events: none;
-  }
-  100% {
-    transform: translateX(0);
-    pointer-events: all;
-  }
-}
-
-
 /*Кнопки слева*/
  @media screen and (min-width: 1200px) {
   .button-left-1:hover,
-  .button-left-2:hover,
-  .button-left-3:hover {
+  .button-left-2:hover {
     left: -2px;
     z-index: 60;
     opacity: 0.8;
     background: rgba(var(--menu-back), 1);
   }
   .button-left-1,
-  .button-left-2,
-  .button-left-3 {
+  .button-left-2 {
     position: fixed;
     height: 50px;
     border: 2px solid rgba(var(--bright-color), 0.1);
@@ -1110,8 +1118,7 @@ body {
     border-radius 0s;
   }
   .button-left-1 > strong,
-  .button-left-2 > strong,
-  .button-left-3 > strong {
+  .button-left-2 > strong {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -1136,26 +1143,21 @@ body {
     left: -100px;
     width: 160px;
   }
-  .button-left-3 {
+ /* .button-left-3 {
     top: 12.92rem;
     left: -140px;
     width: 200px;
-  }
+  } */
   .button-left-1 > strong {
-    background-image: url("https://pbs.twimg.com/profile_images/1147601125438177280/12TRb4CH_400x400.png");
+    background-image: url("https://w7.pngwing.com/pngs/407/234/png-transparent-steam-mervils-a-vr-adventure-computer-icons-personal-computer-valve-corporation-steam-engine-game-logo-windows-thumbnail.png");
     background-size: cover;
   } 
   .button-left-2 > strong {
     background-image: url("https://play-lh.googleusercontent.com/_IAWDTX36L1jI2dOuaBM0bdslkpCEOgIM2TvGjmGPDhmM1Me1v8NhsD0JjHkzZka7gI");
     background-size: cover;
   }
-  .button-left-3 > strong {
-    background-image: url("https://static9.tgstat.ru/channels/_0/ce/ce897200d1e228862aa24aa41c71effb.jpg");
-    background-size: cover;
-  }
   .button-left-1 .b-link,
-  .button-left-2 .b-link,
-  .button-left-3 .b-link {
+  .button-left-2 .b-link {
     display: flex;
     align-items: center;
     height: 100% !important;
@@ -1169,19 +1171,15 @@ body {
   .button-left-2 .b-link {
     padding-right: 3rem;
   }
-  .button-left-3 .b-link {
-    padding-right: 3rem;
-  }
 }
 @media screen and (max-width: 1200px) {
   .button-left-1,
-  .button-left-2,
-  .button-left-3 {
+  .button-left-2 {
     display: none;
   }
 }
 
-/*Фикс истории*/
+/*———————————————ФИКС ИСТОРИИ———————————————*/
 /* Дата + Время */
 .b-user_history-line .date {
   font-size: 0;
@@ -1273,7 +1271,8 @@ body {
     text-indent: -78px; /* Размер даты */
   }
 }
-/*Конец фикса истории*/
+/*———————————————КОНЕЦ ФИКСА ИСТОРИИ———————————————*/
+
 /*Анимация doki-doki*/
 
 @media screen and (min-width: 1865px) {
@@ -1285,9 +1284,9 @@ body {
     pointer-events: all;
   }
   #profiles_show .l-page:before {
-    background: url(https://s3.zerochan.net/240/05/27/2338855.avif) center top/cover;
+    background: url(https://i.ibb.co/JR1HDTS/pngegg-1.png) center top/cover;
     left: 50px;
-    bottom: 0;
+    bottom: 0px;
     animation-delay: 1s;
   }
   #profiles_show .l-page:after {
@@ -1303,21 +1302,20 @@ body {
     width: 150.44px;
     animation-delay: 4s;
   }
+  /*Избранное*/
   #profiles_show .l-page > div:after {
     background: url(https://i.ibb.co/7bzBcz2/pngegg-4.png) center top/cover;
     right: 150px;
-    bottom: 1000px;
+    bottom: 2650px;
     width: 200.44px;
     animation-delay: 3s;
   }
 }
-/*https://i.ibb.co/kyJ66rG/image-removebg-preview.png*//*https://i.ibb.co/7bzBcz2/pngegg-4.png  https://i.ibb.co/JR1HDTS/pngegg-1.png  https://i.ibb.co/w6dpcHS/pngegg-2.png*/
-/*https://s3.zerochan.net/240/05/27/2338855.avif*/
 
 
 
 
-/*Замена списков на иконки*/
+/*———————————————РЕВОРК СПИСКОВ———————————————*/
 @media screen and (min-width: 1312px) {
   .p-user_rates-index .l-content > .mylist {
     position: fixed;
@@ -1548,12 +1546,6 @@ body#user_rates_index .b-options-floated.mobile-desktop a {
 .p-user_rates-index .l-content > .mylist a {
   font-size: 0 !important;
 }
-
-
-
-
-
-
 
 /*Замена названий списков*/
 .b-stats_bar .stat_name[data-type="dropped"] a:before,
@@ -1881,3 +1873,4 @@ body#user_rates_index .b-options-floated.mobile-desktop a {
 .profile-head .c-info .c-lists-info .b-stats_bar .stat_names .stat_name::after {
   display: none;
 }
+
