@@ -362,10 +362,103 @@ body.p-achievements.p-profiles:after {
 :root {
   --font-size-plus: 1px;
 }
-/*Задний фон*/
-body:after {
-    background-image: url("https://wallpapercave.com/wp/wp14942623.webp");
+
+
+html:after {content: "";width: 100vw;height: 100%;position: fixed;top: 0;left: 0;z-index: 0;background-repeat: no-repeat;background-position-x: center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;background-color: rgba(var(--menu-back), 0.5);
+  
+  animation-name: background-animation;
+  animation-fill-mode: forwards;animation-iteration-count: infinite;animation-timing-function: steps(1, end);
+  animation-duration: 90s;
 }
+
+
+@media screen and (min-width: 1px) {
+  html:root {
+    animation-name: color-change;
+    animation-fill-mode: forwards;animation-iteration-count: infinite;animation-timing-function: steps(1, end);
+    animation-duration: 90s;
+  }
+}
+/*Фикс для страницы достижений*/
+html:has(.p-achievements):after {z-index: -1;}
+
+@keyframes color-change {
+  0% {
+    --white-color: 219, 219, 219;
+    --light-color: 184, 184, 184;
+    --dark-color: 155, 155, 155;
+    --bright-color: 217, 217, 217;
+    --dull-color: 116, 116, 116;
+    --input-color: 120, 120, 120;
+    --hover-bottoms-1: 43, 43, 43;
+    --buttoms-color: 74, 74, 74;
+    --hover-buttoms-2: 140, 140, 140;
+    --very-high-rating: 156, 156, 156;
+    --high-rating: 105, 105, 105;
+    --average-rating: 82, 82, 82;
+    --small-rating: 64, 64, 64;
+    --time-filled: 92, 92, 92;
+    --time-empty: 43, 43, 43;
+    --anime-inprocess: 69, 146, 76;
+    --anime-complete: 41, 107, 47;
+    --manga-inprocess: 189, 15, 86;
+    --manga-complete: 153, 0, 62;
+    --hover-color: 255, 153, 51;
+    --shadows-color: 150, 150, 150;
+    --block-color: 69, 69, 69;
+    --menu-back: 21, 21, 21;
+    --nick-cover: 69, 69, 69;
+    --popup-color: 39, 39, 39;
+    --hundred: 1;
+  }
+  50.00% {
+    --white-color: 218, 213, 255;
+    --light-color: 183, 192, 241;
+    --dark-color: 136, 145, 212;
+    --bright-color: 161, 158, 253;
+    --dull-color: 124, 127, 179;
+    --input-color: 95, 95, 127;
+    --hover-bottoms-1: 40, 39, 86;
+    --buttoms-color: 45, 45, 120;
+    --hover-buttoms-2: 156, 98, 25;
+    --very-high-rating: 126, 123, 228;
+    --high-rating: 93, 90, 187;
+    --average-rating: 59, 60, 134;
+    --small-rating: 41, 43, 117;
+    --time-filled: 70, 73, 175;
+    --time-empty: 18, 14, 53;
+    --anime-inprocess: 69, 146, 76;
+    --anime-complete: 41, 107, 47;
+    --manga-inprocess: 189, 15, 86;
+    --manga-complete: 153, 0, 62;
+    --hover-color: 210, 137, 45;
+    --shadows-color: 134, 141, 193;
+    --block-color: 46, 45, 97;
+    --menu-back: 10, 13, 33;
+    --nick-cover: 45, 33, 167;
+    --popup-color: 35, 34, 75;
+    --hundred: 1;
+  }
+}
+
+@keyframes background-animation {
+  0% {
+    background-image: url(https://i.ibb.co/dMdWjyP/wp13268731-frieren-beyond-journeys-end-wallpapers1.jpg);
+  }
+  50.00% {
+    background-image: url(https://wallpapercave.com/wp/wp14942623.webp);
+  }
+}
+
+/*Увеличение шрифта e-design*/
+@import url(https://raw.githubusercontent.com/ALTaww/Shikimori/main/e-design-increase-the-font.css);
+:root {
+  --font-size-plus: 1px;
+}
+/*Задний фон*/
+/*body:after {
+    background-image: url("https://wallpapercave.com/wp/wp14942623.webp");
+}*/
 /*https://wallpapercave.com/wp/wp14942623.webp*/
 /*https://i.ibb.co/dMdWjyP/wp13268731-frieren-beyond-journeys-end-wallpapers1.jpg*/
 @media screen and (min-width: 1px) {
@@ -379,37 +472,37 @@ body:after {
   }
 }
 
-/*On Battle*/
-/*@media screen and (min-width: 1px) {
+/*Alien Earth*/
+@media screen and (min-width: 1px) {
   html:root {
-    --white-color: 215, 225, 255;
-    --light-color: 172, 194, 234;
-    --dark-color: 133, 157, 214;
-    --bright-color: 131, 177, 255;
-    --dull-color: 104, 117, 152;
-    --input-color: 72, 105, 156;
-    --hover-bottoms-1: 20, 31, 64;
-    --buttoms-color: 25, 38, 72;
+    --white-color: 218, 213, 255;
+    --light-color: 183, 192, 241;
+    --dark-color: 136, 145, 212;
+    --bright-color: 161, 158, 253;
+    --dull-color: 124, 127, 179;
+    --input-color: 95, 95, 127;
+    --hover-bottoms-1: 40, 39, 86;
+    --buttoms-color: 45, 45, 120;
     --hover-buttoms-2: 156, 98, 25;
-    --very-high-rating: 92, 116, 185;
-    --high-rating: 66, 88, 173;
-    --average-rating: 36, 56, 115;
-    --small-rating: 21, 35, 76;
-    --time-filled: 33, 56, 123;
-    --time-empty: 12, 22, 58;
+    --very-high-rating: 126, 123, 228;
+    --high-rating: 93, 90, 187;
+    --average-rating: 59, 60, 134;
+    --small-rating: 41, 43, 117;
+    --time-filled: 70, 73, 175;
+    --time-empty: 18, 14, 53;
     --anime-inprocess: 69, 146, 76;
     --anime-complete: 41, 107, 47;
     --manga-inprocess: 189, 15, 86;
     --manga-complete: 153, 0, 62;
     --hover-color: 210, 137, 45;
-    --shadows-color: 89, 134, 181;
-    --block-color: 28, 42, 84;
-    --menu-back: 18, 23, 37;
-    --nick-cover: 37, 60, 138;
-    --popup-color: 27, 41, 84;
+    --shadows-color: 134, 141, 193;
+    --block-color: 46, 45, 97;
+    --menu-back: 10, 13, 33;
+    --nick-cover: 45, 33, 167;
+    --popup-color: 35, 34, 75;
     --hundred: 1;
   }
-}*/
+}
 /*Gray Silence*/
 /*@media screen and (min-width: 1px) {
   html:root {
@@ -440,10 +533,9 @@ body:after {
     --popup-color: 57, 63, 72;
     --hundred: 1;
   }
-}*/
+}
 /*Yin & Yang*/
-/**/
-@media screen and (min-width: 1px) {
+/*@media screen and (min-width: 1px) {
   html:root {
     --white-color: 219, 219, 219;
     --light-color: 184, 184, 184;
@@ -503,7 +595,7 @@ body:after {
     --popup-color: 53, 27, 14;
     --hundred: 1;
   }
-}*/
+}
 
 
 /*———————————————МЕЛОЧИ———————————————*/
