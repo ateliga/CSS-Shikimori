@@ -3,6 +3,8 @@
 @import url(https://raw.githubusercontent.com/ALTaww/Shikimori-posters/main/Update-posters.css);/* Дополнение */
 @import url(https://raw.githubusercontent.com/ALTaww/Shikimori-posters/main/add-poster-to-tooltip.css);/* Добавляем постер в подсказку */
 @import url(https://raw.githubusercontent.com/ALTaww/Shikimori-Modified-favorites/main/code.css);/*Изменение избранного на маленьких экранах*/
+@import url(https://raw.githubusercontent.com/ALTaww/Shikimori/main/lists-as-icons.css);/*Списки иконками*/
+@import url(https://raw.githubusercontent.com/ALTaww/Shikimori/main/lists-as-icons-profile.css);/*Списки иконками в профиле*/
 
 @import url("https://raw.githubusercontent.com/ed-main/ed-main.github.io/master/cssfiles/main_code_1.css");
 @import url("https://raw.githubusercontent.com/ed-main/ed-main.github.io/master/cssfiles/main_code_2.css");
@@ -13,7 +15,6 @@
 @import url("https://raw.githubusercontent.com/ed-main/ed-main.github.io/master/cssfiles/q07_ava_screen_center_addon.css");
 @import url("https://raw.githubusercontent.com/ed-main/ed-main.github.io/master/cssfiles/q08_alter_sitemenu.css");
 @import url("https://raw.githubusercontent.com/ed-main/ed-main.github.io/master/cssfiles/q09_favourite-anime-manga.css");
-
 
 
 /*———————————————ИЗБРАННОЕ———————————————*/
@@ -181,7 +182,6 @@
 .p-profiles .cc-favourites .c-anime a[href*="39535"] .image-cutter::before {
     content: "Реинкарнация безработного";
 }
-
 /* Манга 1 — Унеси меня на Луну */
 /*Вертикальные постеры*/
 [href*="mangas/112589-"], [data-href*="mangas/112589"], [src*="mangas/112589"], [srcset*="mangas/112589"] {
@@ -364,9 +364,10 @@ body.p-achievements.p-profiles:after {
 }
 /*Задний фон*/
 body:after {
-    background-image: url("https://i.ibb.co/dMdWjyP/wp13268731-frieren-beyond-journeys-end-wallpapers1.jpg");
+    background-image: url("https://wallpapercave.com/wp/wp14942623.webp");
 }
-/*https://wallpapercave.com/wp/wp13027086.jpg*/
+/*https://wallpapercave.com/wp/wp14942623.webp*/
+/*https://i.ibb.co/dMdWjyP/wp13268731-frieren-beyond-journeys-end-wallpapers1.jpg*/
 @media screen and (min-width: 1px) {
   .correct-mob-version {
     color: inherit;
@@ -472,7 +473,6 @@ body:after {
     --hundred: 1;
   }
 }
-
 /*Dark Forest*/
 /*@media screen and (min-width: 1px) {
   html:root {
@@ -529,7 +529,7 @@ body:after {
     display: none;
   }
 }
-/*Увеличение аватарки при наведении на меню*/
+/*Увеличение аватарки при наведении*/
 .menu-dropdown img {
   transition: transform 1s ease;
 }
@@ -590,23 +590,6 @@ body {
 .l-top_menu-v2 .menu-dropdown.active .submenu, .l-top_menu-v2 .global-search .search-results {
   animation: 0.7s submenu linear;
 }
-/*Убираю образовавшийся скроллбар*/
-@media screen and (min-height: 720px) {
-  .menu-dropdown.main .submenu::-webkit-scrollbar {
-    display: none;
-  }
-}
-@media screen and (min-height: 460px) {
-  .menu-dropdown.profile .submenu::-webkit-scrollbar {
-    display: none;
-  }
-}
-@media screen and (min-height: 240px) {
-  .l-top_menu-v2 .global-search .search-results::-webkit-scrollbar {
-    display: none;
-  }
-}
-/* Анимация submenu */
 @keyframes submenu {
   from {
     max-height: 0px;
@@ -643,8 +626,22 @@ body {
     87.5% {box-shadow:0 0 20px 10px #ff0000}
     100% {box-shadow:0 0 20px 10px rgb(60,208,131)}
 }
-
-
+/*Убираю образовавшийся скроллбар*/
+@media screen and (min-height: 720px) {
+  .menu-dropdown.main .submenu::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (min-height: 460px) {
+  .menu-dropdown.profile .submenu::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (min-height: 240px) {
+  .l-top_menu-v2 .global-search .search-results::-webkit-scrollbar {
+    display: none;
+  }
+}
 
 
 /*———————————————ДОСТИЖЕНИЯ———————————————*/
@@ -679,7 +676,6 @@ body.p-achievements.p-profiles .l-page {
     margin: 3px 1% 3% 1%;
     right: auto;
   }
-
   #profiles_show.p-profiles-show .achievements .cc-authors .b-achievement {
     margin: 15px 1% 15px 1%;
   }
@@ -688,7 +684,6 @@ body.p-achievements.p-profiles .l-page {
     width: 33%;
   }
 }
-
 /*Расширит франшизы до 8шт >*/
 @media screen and (min-width: 1200px) {
   #profiles_show .cc-franchises {
@@ -713,13 +708,11 @@ body.p-achievements.p-profiles .l-page {
     display: block;
   }
 }
-
 @media screen and (max-width: 600px) {
   #profiles_show.p-profiles-show .achievements .cc-franchises .b-badge:nth-child(7),
   #profiles_show.p-profiles-show .achievements .cc-franchises .b-badge:nth-child(8) {
       display: none;
   }
-
   #profiles_show .cc-franchises {
       grid-template-columns: repeat(4, 1fr);
       grid-column-gap: 2.2%;
@@ -727,13 +720,11 @@ body.p-achievements.p-profiles .l-page {
       width: 97%;
   }
 }
-
 @media screen and (max-width: 472px) {
   #profiles_show.p-profiles-show .achievements .cc-franchises .b-badge:nth-child(5),
   #profiles_show.p-profiles-show .achievements .cc-franchises .b-badge:nth-child(6) {
       display: none;
   }
-
   #profiles_show .cc-franchises {
       grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 2.2%;
@@ -745,7 +736,6 @@ body.p-achievements.p-profiles .l-page {
 .p-profiles .b-badge {
     filter: none !important;
 }
-
 /* margin в обо мне */
 @media screen and (min-width: 1200px) {
   #profiles_show .profile-content .about.block {
@@ -757,7 +747,6 @@ body.p-achievements.p-profiles .l-page {
       margin-top: 15px;
   }
 }
-
 #profiles_show .achievements .cc-2 > .c-column:nth-child(4) {
   width: 100%;
   margin-left: 0;
@@ -802,7 +791,6 @@ body.p-achievements.p-profiles .l-page {
     left: 0;
   }
 }
-
 /*Замена постеров*/
 .p-achievements-index.p-achievements .b-badge,
 .p-achievements-franchise.p-achievements .b-badge { 
@@ -975,7 +963,6 @@ body.p-achievements.p-profiles .l-page {
     margin-bottom: -1.6%;
   }
 }
-
 .p-profiles .b-achievement[data-hint^="100 просмотренных аниме"] .inner:after {
      box-shadow: 0 0 2px 1px #e4ba54; /*Золотая рамка*/
    background-image: url("https://wallpapercave.com/wp/wp2260439.jpg");
@@ -990,7 +977,6 @@ body.p-achievements.p-profiles .l-page {
 .p-profiles .b-achievement[data-hint^="Генки"]:hover .inner:after {
    background-image: url("https://media.tenor.com/ltQ4n8c522YAAAAd/spy-x-family-anya.gif");
 }
-
 .p-profiles .b-achievement[data-hint^="Безумие / Психологическое 1 уровня"] .inner:after {
    box-shadow: 0 0 2px 1px #54e454;
    background-image: url("https://avatars.mds.yandex.net/i?id=50a72d68dde0b5a8643edfaad2b294ac_l-3129527-images-thumbs&n=13");
@@ -998,7 +984,6 @@ body.p-achievements.p-profiles .l-page {
 .p-profiles .b-achievement[data-hint^="Безумие / Психологическое 1 уровня"]:hover .inner:after {
    background-image: url("https://media.tenor.com/iaq02aYAdWcAAAAd/neon-genesis.gif");
 }
-
 .p-profiles .b-achievement[data-hint^="Романтика 1-го уровня"] .inner:after {
    box-shadow: 0 0 2px 1px #54e454;
    background-image: url("https://desu.shikimori.me/system/user_images/thumbnail/969640/14efabc5c7ab27067e66375f5a917a81a9b16d24b85647450104c9f2e13b2cef.jpg");
@@ -1006,7 +991,6 @@ body.p-achievements.p-profiles .l-page {
 .p-profiles .b-achievement[data-hint^="Романтика 1-го уровня"]:hover .inner:after {
    background-image: url("https://media1.tenor.com/m/lt7pPWLYYOcAAAAC/sousou-no-frieren-frieren.gif");
 }
-
 .p-profiles .b-achievement[data-hint^="Комедия 1 уровня"] .inner:after {
    box-shadow: 0 0 2px 1px #54e454; /*рамка*/
    background-image: url("https://avatars.mds.yandex.net/i?id=9dccd7283e5898e3a8e262dfdedcb667_l-4230422-images-thumbs&n=13");
@@ -1014,7 +998,6 @@ body.p-achievements.p-profiles .l-page {
 .p-profiles .b-achievement[data-hint^="Комедия 1 уровня"]:hover .inner:after {
    background-image: url("https://media.tenor.com/-99k2VFaokQAAAAd/konosuba-waving.gif");
 }
-
 .p-profiles .b-achievement[data-hint^="Фэнтези 1 уровня"] .inner:after {
    box-shadow: 0 0 2px 1px #54e454;
    background-image: url("https://avatars.mds.yandex.net/i?id=459a182a281af4bc8ab0fd8b476334e0_l-4502683-images-thumbs&n=13");
@@ -1022,7 +1005,6 @@ body.p-achievements.p-profiles .l-page {
 .p-profiles .b-achievement[data-hint^="Фэнтези 1 уровня"]:hover .inner:after {
    background-image: url("https://media.tenor.com/_nqCwtmV8y8AAAAd/dodge.gif");
 }
-
 .p-profiles .b-achievement[data-hint^="Военное 1 уровня"] .inner:after {
    box-shadow: 0 0 2px 1px #54e454;
    background-image: url("https://avatars.mds.yandex.net/i?id=22edddad77c7d22cb506f22ea1905910_l-8159483-images-thumbs&n=13");
@@ -1030,7 +1012,6 @@ body.p-achievements.p-profiles .l-page {
 .p-profiles .b-achievement[data-hint^="Военное 1 уровня"]:hover .inner:after {
    background-image: url("https://media.tenor.com/uqdgBz1EvzcAAAAd/tanya-the-evil-tanya-von-degurechaff.gif");
 }
-
 .p-profiles .b-achievement[data-hint^="Хоррор / Триллер 1 уровня"] .inner:after {
    box-shadow: 0 0 2px 1px #54e454;
    background-image: url("https://avatars.mds.yandex.net/i?id=1c28e18e44c3716e677e3c0fddd45439_l-9185386-images-thumbs&n=13");
@@ -1038,7 +1019,6 @@ body.p-achievements.p-profiles .l-page {
 .p-profiles .b-achievement[data-hint^="Хоррор / Триллер 1 уровня"]:hover .inner:after {
    background-image: url("https://media.tenor.com/gYV8ucNbmdkAAAAd/evil-laugh-evil.gif");
 }
-
 .p-profiles .b-achievement[data-hint^="Драма 1-го уровня"] .inner:after {
    box-shadow: 0 0 2px 1px #54e454;
    background-image: url("https://1zoom.club/uploads/posts/2023-02/1677570844_1zoom-club-p-les-v-kotorom-mertsayut-svetlyachki-12.jpg");
@@ -1051,7 +1031,9 @@ body.p-achievements.p-profiles .l-page {
 }
 /*———————————————КОНЕЦ БЛОКА ДОСТИЖЕНИЙ———————————————*/
 
- /* Анимация основного блока */
+
+/*———————————————ОСНОВНОЙ БЛОК———————————————*/
+/* Анимация основного блока */
 @media screen and (min-width: 1200px) {
 #profiles_show .l-page .profile-content {
     box-shadow: none;
@@ -1061,10 +1043,9 @@ body.p-achievements.p-profiles .l-page {
     animation-timing-function: ease;
   }
 }
-
- /* Цвета и фреймы анимации */
- @keyframes box-shadow-animation {
- /* offset-x | offset-y | blur-radius | spread-radius | color 0 0 20px 10px*/
+/* Цвета и фреймы анимации */
+@keyframes box-shadow-animation {
+/* offset-x | offset-y | blur-radius | spread-radius | color 0 0 20px 10px*/
     0% {box-shadow:0 0 105px 10px rgba(181,53,172,0.6)}
     10% {box-shadow:0 0 105px 10px rgba(181,53,112,0.6)}
     20% {box-shadow:0 0 105px 10px rgba(208,60,198,0.6)}
@@ -1077,8 +1058,6 @@ body.p-achievements.p-profiles .l-page {
     90% {box-shadow:0 0 105px 10px rgba(181,53,137,0.6)}
     100%{box-shadow:0 0 105px 10px rgba(60,89,208,0.6)}
   }
-
-
 /* Комменты */
 .b-comments .b-comment {
     padding: 10px 0.5% 0.25% 0.5%;
@@ -1091,8 +1070,6 @@ body.p-achievements.p-profiles .l-page {
 .b-comments .b-comment:last-child {
   border: solid 4px rgba(var(--white-color), 0.3) !important;
 }
-
-
 /*Кнопки слева*/
  @media screen and (min-width: 1200px) {
   .button-left-1:hover,
@@ -1178,6 +1155,9 @@ body.p-achievements.p-profiles .l-page {
     display: none;
   }
 }
+/*———————————————КОНЕЦ ОСНОВНОГО БЛОКА———————————————*/
+
+
 
 /*———————————————ФИКС ИСТОРИИ———————————————*/
 /* Дата + Время */
@@ -1185,7 +1165,6 @@ body.p-achievements.p-profiles .l-page {
   font-size: 0;
   white-space: nowrap;
 }
-
 .b-user_history-line .date::before,
 .b-user_history-line .date::after {
   display: inline-block;
@@ -1194,7 +1173,6 @@ body.p-achievements.p-profiles .l-page {
   font-size: 12px;
   overflow: hidden;
 }
-
 /* Дата */
 .b-user_history-line .date::before {
   position: relative;
@@ -1203,14 +1181,12 @@ body.p-achievements.p-profiles .l-page {
   white-space: nowrap;
   z-index: 1;
 }
-
 /* Время */
 .b-user_history-line .date::after {
   content: attr(datetime);
   width: 34px; /* Размер времени */
   text-indent: -72px; /* Размер даты */
 }
-
 /*Установка переменны дней*/
 .b-user_history-line .date[datetime*='-01T']::before{--HD-day: '01';}
 .b-user_history-line .date[datetime*='-02T']::before{--HD-day: '02';}
@@ -1243,7 +1219,6 @@ body.p-achievements.p-profiles .l-page {
 .b-user_history-line .date[datetime*='-29T']::before{--HD-day: '29';}
 .b-user_history-line .date[datetime*='-30T']::before{--HD-day: '30';}
 .b-user_history-line .date[datetime*='-31T']::before{--HD-day: '31';}
-
 /*Установка переменны месяцев*/
 .b-user_history-line .date[datetime*='-01-']::before{--HD-month: 'янв';}
 .b-user_history-line .date[datetime*='-02-']::before{--HD-month: 'фев';}
@@ -1257,11 +1232,9 @@ body.p-achievements.p-profiles .l-page {
 .b-user_history-line .date[datetime*='-10-']::before{--HD-month: 'окт';}
 .b-user_history-line .date[datetime*='-11-']::before{--HD-month: 'ноя';}
 .b-user_history-line .date[datetime*='-12-']::before{--HD-month: 'дек';}
-
 .b-user_history-line .date::before{
 	content: var(--HD-day)' 'var(--HD-month)' 'attr(datetime);
 }
-
 /* FF FIX */
 @-moz-document url-prefix() {
   .b-user_history-line .date::before {
@@ -1273,8 +1246,9 @@ body.p-achievements.p-profiles .l-page {
 }
 /*———————————————КОНЕЦ ФИКСА ИСТОРИИ———————————————*/
 
-/*Анимация doki-doki*/
 
+
+/*Анимация doki-doki*/
 @media screen and (min-width: 1865px) {
   #profiles_show .l-page:before, #profiles_show .l-page:after, #profiles_show .l-page > div:before, #profiles_show .l-page > div:after {
     width: 118.44px;
@@ -1314,7 +1288,6 @@ body.p-achievements.p-profiles .l-page {
 
 
 
-
 /*———————————————РЕВОРК СПИСКОВ———————————————*/
 @media screen and (min-width: 1312px) {
   .p-user_rates-index .l-content > .mylist {
@@ -1322,401 +1295,10 @@ body.p-achievements.p-profiles .l-page {
     top: 240px;
   }
 }
-
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialicons/v128/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
-}
-
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-feature-settings: 'liga';
-  -webkit-font-smoothing: antialiased;
-}
-
-.p-user_rates-index .l-content > .mylist {
-  position: absolute;
-  top: 64px;
-  right: auto;
-  width: 56px;
-  margin: 0 0 0 -72px;
-  background: rgba(var(--menu-back), 0.7);
-  border-radius: 4px;
-  text-align: left;
-}
-
-.p-user_rates-index .l-content > .mylist a {
-  position: relative;
-  display: block;
-  padding: 8px;
-  margin: 2px 0;
-  border-radius: 4px;
-  color: #5e6988;
-  font-size: 0;
-  font-weight: normal;
-  line-height: 0;
-}
-
-.p-user_rates-index .l-content > .mylist a:hover {
-  text-decoration: none;
-}
-
-.p-user_rates-index .l-content > .mylist a::before {
-  padding: 8px;
-  border-radius: 50%;
-}
-
-.p-user_rates-index .l-content > .mylist a:hover::before, .p-user_rates-index .l-content > .mylist a.selected::before {
-  background-color: rgba(var(--popup-color), 1);
-}
-
-.p-user_rates-index .l-content > .mylist a[data-id='planned']::before {
-  content: 'today';
-}
-
-.p-user_rates-index .l-content > .mylist a[data-id='watching']::before {
-  content: 'play_arrow';
-}
-
-.p-user_rates-index .l-content > .mylist a[data-id='rewatching']::before {
-  content: 'replay';
-}
-
-.p-user_rates-index .l-content > .mylist a[data-id='completed']::before {
-  content: 'done';
-}
-
-.p-user_rates-index .l-content > .mylist a[data-id='on_hold']::before {
-  content: 'schedule';
-}
-
-.p-user_rates-index .l-content > .mylist a[data-id='dropped']::before {
-  content: 'delete';
-}
-.p-user_rates-index .l-content > .mylist a::after {
-  /* Удаляем подписи */
-  display: none; /* Скрываем подписи */
-}
-
-.p-user_rates-index .l-content > .mylist a::after {
-  top: 0;
-  height: 20px;
-  margin: auto 12px;
-  opacity: 0;
-  transform: translateX(-40px);
-  transition: opacity 0.3s, transform 0.3s;
-}
-
-.p-user_rates-index .l-content > .mylist a[data-id='planned']::after {
-  content: 'Запланировано' !important;
-}
-
-.p-user_rates-index .l-content > .mylist a[data-id='watching']::after {
-  content: 'Смотрю' !important;
-}
-
-.p-user_rates-index .l-content > .mylist a[data-id='rewatching']::after {
-  content: 'Пересматриваю' !important;
-}
-
-.p-user_rates-index .l-content > .mylist a[data-id='completed']::after {
-  content: 'Просмотрено' !important;
-}
-
-.p-user_rates-index .l-content > .mylist a[data-id='on_hold']::after {
-  content: 'Отложено или Брошено' !important;
-}
-
-.p-user_rates-index .l-content > .mylist a[data-id='dropped']::after {
-  content: 'Ближ. Заплан.' !important;
-}
-
-.p-user_rates-index .l-content > .mylist a[data-id='watching'][href*="/manga/"]::after {
-  content: 'Читаю' !important;
-}
-
-.p-user_rates-index .l-content > .mylist a[data-id='rewatching'][href*="/manga/"]::after {
-  content: 'Перечитываю' !important;
-}
-
-.p-user_rates-index .l-content > .mylist a[data-id='completed'][href*="/manga/"]::after {
-  content: 'Прочитано' !important;
-}
-
-.p-user_rates-index .l-content > .mylist a span {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 2px 4px;
-  margin: 6px 4px;
-  background: #5e6988;
-  border-radius: 2px;
-  color: white;
-  font-size: 14px;
-  line-height: .8;
-}
-
-.p-user_rates-index .l-content > .mylist a span::before, .p-user_rates-index .l-content > .mylist a span::after {
-  display: none;
-}
-
-.p-user_rates-index .l-content > .mylist a::before {
-  display: block;
-  flex-shrink: 0;
-  width: 1em !important;
-  font-family: 'Material Icons' !important;
-  font-size: 24px !important;
-  font-style: normal;
-  font-weight: 400 !important;
-  line-height: 1 !important;
-  letter-spacing: normal;
-  text-transform: none;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-  overflow: hidden;
-  color: rgba(var(--light-color), 0.8);
-}
-
-.p-user_rates-index .l-content > .mylist a:hover::after {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-body#user_rates_index .b-options-floated.mobile-desktop a {
-  margin-left: 0.4em;
-}
-
-.p-user_rates-index .l-content > .mylist a::after {
-  display: block !important;
-  position: absolute;
-  padding: .375rem .75rem;
-  margin: .25rem .75rem;
-  background-color: rgba(var(--popup-color), 0.9);
-  border-radius: .125rem;
-  color: rgb(var(--white-color));
-  font-size: .875rem;
-  line-height: 1.25rem;
-  white-space: nowrap;
-  z-index: 100;
-  pointer-events: none;
-  transition: opacity 0.3s, transform 0.3s;
-}
-
-.p-user_rates-index .l-content > .mylist {
-  margin: 0 0 0 -71px;
-  height: auto;
-}
-
-@media screen and (max-width: 1311px) {
-  .p-user_rates-index .l-content > .mylist {
-    width: max-content;
-    position: initial;
-    margin: 0 auto 8px auto;
-  }
-  .p-user_rates-index .l-content > .mylist a:hover::before, .p-user_rates-index .l-content > .mylist a.selected::before {
-    color: rgba(var(--light-color), 1);
-  }
-}
-
-@media screen and (max-width: 359px) {
-  .p-user_rates-index .l-content > .mylist {
-    width: calc(56px * 3);
-  }
-  .p-user_rates-index .b-options-floated.mobile-desktop a {
-    width: auto;
-  }
-}
 .p-user_rates-index .l-content > .mylist a {
   font-size: 0 !important;
 }
-
-/*Замена названий списков*/
-.b-stats_bar .stat_name[data-type="dropped"] a:before,
-.b-options-floated.mobile-desktop a[data-id="dropped"]:before,
-.list-groups .status-4 .subheadline:before,
-.p-profiles .profile-head .c-history .entry .misc[title*="Брошено"]:before,
-.b-add_to_list .trigger .text .status-name[data-text="Брошено"]:before,
-.b-add_to_list .expanded-options .option .text .status-name[data-text="Брошено"]:before {
-  content: " Ближ. Запланир. ";
-}
-.b-stats_bar .stat_name[data-type="on_hold"] a:before,
-.b-options-floated.mobile-desktop a[data-id="on_hold"]:before,
-.list-groups .status-3 .subheadline:before,
-.b-add_to_list .trigger .text .status-name[data-text="Отложено"]:before,
-.b-add_to_list .expanded-options .option .text .status-name[data-text="Отложено"]:before {
-  content: " Отл. или Брош. ";
-}
-
-.b-stats_bar .stat_name[data-type="on_hold"] a:before, 
-.b-stats_bar .stat_name[data-type="on_hold"] a span,
-.b-stats_bar .stat_name[data-type="dropped"] a:before,
-.b-stats_bar .stat_name[data-type="dropped"] a span {
-    font-size: 12.5px;
-}
-.b-stats_bar .stat_name[data-type="on_hold"] a,
-.b-stats_bar .stat_name[data-type="dropped"] a,
-.b-options-floated.mobile-desktop a[data-id="dropped"], .b-options-floated.mobile-desktop a[data-id="on_hold"],
-.list-groups .status-4 .subheadline, .list-groups .status-3 .subheadline,
-.p-profiles .profile-head .c-history .entry .misc[title*="Брошено"],
-.b-add_to_list .trigger .text .status-name[data-text="Брошено"]:after, .b-add_to_list .trigger .text .status-name[data-text="Отложено"]:after,
-.b-add_to_list .expanded-options .option .text .status-name[data-text="Брошено"]:after, .b-add_to_list .expanded-options .option .text .status-name[data-text="Отложено"]:after {
-    font-size: 0;
-}
-
-/*Уменьшение размера текста на маленьком разрешении*/
-@media screen and (max-width: 1023px) {
-	.b-stats_bar.anime .stat_name[data-type="on_hold"] a:before, .b-stats_bar.manga .stat_name[data-type="on_hold"] a:before, .b-stats_bar.anime .stat_name[data-type="on_hold"] a span, .b-stats_bar.manga .stat_name[data-type="on_hold"] a span, .b-stats_bar.anime .stat_name[data-type="dropped"] a:before, .b-stats_bar.manga .stat_name[data-type="dropped"] a:before, .b-stats_bar.anime .stat_name[data-type="dropped"] a span, .b-stats_bar.manga .stat_name[data-type="dropped"] a span {
-    	font-size: 10px !important;
-	}
-}
-@media screen and (min-width: 1023px) and (max-width: 1200px) {
-  .b-stats_bar.anime .stat_name[data-type="on_hold"] a:before, .b-stats_bar.manga .stat_name[data-type="on_hold"] a:before, .b-stats_bar.anime .stat_name[data-type="on_hold"] a span, .b-stats_bar.manga .stat_name[data-type="on_hold"] a span, .b-stats_bar.anime .stat_name[data-type="dropped"] a:before, .b-stats_bar.manga .stat_name[data-type="dropped"] a:before, .b-stats_bar.anime .stat_name[data-type="dropped"] a span, .b-stats_bar.manga .stat_name[data-type="dropped"] a span {
-    	font-size: 11px !important;
-	}
-}
-
-.b-options-floated.mobile-desktop a[data-id="dropped"]:before,
-.b-options-floated.mobile-desktop a[data-id="dropped"] span, .b-options-floated.mobile-desktop a[data-id="on_hold"] span,
-.b-options-floated.mobile-desktop a[data-id="on_hold"]:before {
-  font-size: 13px;
-}
-
-.list-groups .status-4 .subheadline:before, .list-groups .status-3 .subheadline:before {
-  font-size: 14px;
-}
-
-.p-profiles .profile-head .c-history .entry .misc[title*="Брошено"]:before {
-  display: unset;
-  font-size: 12px;
-}
-
-
-
-
-/*Замена названий списков*/
-/* ---- Отложено  ----  */
- .b-stats_bar.anime .stat_name[data-type="on_hold"] a:before, .b-stats_bar.manga .stat_name[data-type="on_hold"] a:before {
-    content: " Отложено или Брошено ";
-    font-size: 12.5px;
-}
-.b-stats_bar.anime .stat_name[data-type="on_hold"] a, .b-stats_bar.manga .stat_name[data-type="on_hold"] a {
-    font-size: 0;
-}
-.b-stats_bar.anime .stat_name[data-type="on_hold"] a span, .b-stats_bar.manga .stat_name[data-type="on_hold"] a span {
-    font-size: 12.5px;
-}
-
-/* ---- Брошено  ----  */
- .b-stats_bar.anime .stat_name[data-type="dropped"] a:before, .b-stats_bar.manga .stat_name[data-type="dropped"] a:before {
-    content: " Ближайшее Запланированное ";
-    font-size: 12.5px;
-}
- .b-stats_bar.anime .stat_name[data-type="dropped"] a, .b-stats_bar.manga .stat_name[data-type="dropped"] a {
-    font-size: 0;
-}
- .b-stats_bar.anime .stat_name[data-type="dropped"] a span, .b-stats_bar.manga .stat_name[data-type="dropped"] a span {
-    font-size: 12.5px;
-}
-
-/*Уменьшение размера текста на маленьком разрешении*/
-@media screen and (max-width: 1023px) {
-	.b-stats_bar.anime .stat_name[data-type="on_hold"] a:before, .b-stats_bar.manga .stat_name[data-type="on_hold"] a:before, .b-stats_bar.anime .stat_name[data-type="on_hold"] a span, .b-stats_bar.manga .stat_name[data-type="on_hold"] a span, .b-stats_bar.anime .stat_name[data-type="dropped"] a:before, .b-stats_bar.manga .stat_name[data-type="dropped"] a:before, .b-stats_bar.anime .stat_name[data-type="dropped"] a span, .b-stats_bar.manga .stat_name[data-type="dropped"] a span {
-    	font-size: 10px !important;
-	}
-}
-@media screen and (min-width: 1023px) and (max-width: 1200px) {
-  .b-stats_bar.anime .stat_name[data-type="on_hold"] a:before, .b-stats_bar.manga .stat_name[data-type="on_hold"] a:before, .b-stats_bar.anime .stat_name[data-type="on_hold"] a span, .b-stats_bar.manga .stat_name[data-type="on_hold"] a span, .b-stats_bar.anime .stat_name[data-type="dropped"] a:before, .b-stats_bar.manga .stat_name[data-type="dropped"] a:before, .b-stats_bar.anime .stat_name[data-type="dropped"] a span, .b-stats_bar.manga .stat_name[data-type="dropped"] a span {
-    	font-size: 11px !important;
-	}
-}
-
-/*На странице списка аниме/манги*/
-.b-options-floated.mobile-desktop a[data-id="dropped"], .b-options-floated.mobile-desktop a[data-id="on_hold"] {
-  font-size: 0;
-}
-.b-options-floated.mobile-desktop a[data-id="dropped"]:before {
-  content: "Ближ. Заплан. ";
-  font-size: 13px;
-}
-.b-options-floated.mobile-desktop a[data-id="dropped"] span, .b-options-floated.mobile-desktop a[data-id="on_hold"] span {
-  font-size: 13px;
-}
-.b-options-floated.mobile-desktop a[data-id="on_hold"]:before {
-  content: "Отложено или Брошено ";
-  font-size: 13px;
-}
-
-/*Текст над самим списком*/
-/*Удаляем старый текст*/
-.list-groups .status-4 .subheadline, .list-groups .status-3 .subheadline {
-  font-size: 0;
-}
-/*Брошено*/
-.list-groups .status-4 .subheadline:before {
-  content: "Ближайшее Запланированное";
-  font-size: 14px;
-}
-
-/*Отложено*/
-.list-groups .status-3 .subheadline:before {
-  content: "Отложено или Брошено";
-  font-size: 14px;
-}
-
-/*В расрывающемся списке истории*/
-.p-profiles .profile-head .c-history .entry .misc[title*="Брошено"]:before {
-  display: unset;
-  content: "Ближайшее Запланированное";
-  font-size: 12px;
-}
-.p-profiles .profile-head .c-history .entry .misc[title*="Брошено"] {
-  font-size: 0 !important;
-}
-
-/*Раскрывающаяся менюшка*/
-/*То, что ты выбрал*/
-/*Удаляем старый текст*/
-.b-add_to_list .trigger .text .status-name[data-text="Брошено"]:after, .b-add_to_list .trigger .text .status-name[data-text="Отложено"]:after {
-  font-size: 0;
-}
-/*Добавляем новый, смотри на data-text*/
-.b-add_to_list .trigger .text .status-name[data-text="Брошено"]:before {
-  content: "Ближ. Запланиров.";
-}
-.b-add_to_list .trigger .text .status-name[data-text="Отложено"]:before {
-  content: "Отл. или Брош.";
-}
-/*Список твоих списков*/
-/*Удаляем старый текст*/
-.b-add_to_list .expanded-options .option .text .status-name[data-text="Брошено"]:after, .b-add_to_list .expanded-options .option .text .status-name[data-text="Отложено"]:after {
-  font-size: 0;
-}
-/*Добавляем новый, смотри на data-text*/
-.b-add_to_list .expanded-options .option .text .status-name[data-text="Брошено"]:before {
-  content: "Ближ. Запланированное";
-}
-.b-add_to_list .expanded-options .option .text .status-name[data-text="Отложено"]:before {
-  content: "Отложено или Брошено";
-}
-
-/*Говнокод на говнокоде покрытый*/
+/*Для e-design*/
 @media screen and (max-width: 767px) {
   .b-stats_bar .stat_names {
     display: block;
@@ -1737,140 +1319,3 @@ body#user_rates_index .b-options-floated.mobile-desktop a {
     top: -218px;
   }
 }
-/*На странице профиля*/
-#profiles_show .stat_names {
-  background: rgba(var(--menu-back), 0.7);
-  border-radius: 4px;
-  text-align: left;
-  height: auto;
-  width: max-content;
-  position: initial;
-  margin: 0 auto 8px auto;
-}
-
-#profiles_show .stat_names .stat_name a {
-  position: relative;
-  display: block;
-  padding: 8px;
-  margin: 2px 0;
-  border-radius: 4px;
-  color: #5e6988;
-  font-size: 0;
-  font-weight: normal;
-  line-height: 0;
-}
-
-#profiles_show .stat_names .stat_name a:before  {
-  display: block;
-  flex-shrink: 0;
-  width: 1em !important;
-  font-family: 'Material Icons' !important;
-  font-size: 24px !important;
-  font-style: normal;
-  font-weight: 400 !important;
-  line-height: 1 !important;
-  letter-spacing: normal;
-  text-transform: none;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: 'liga';
-  overflow: hidden;
-  color: rgba(var(--light-color), 0.8);
-  padding: 8px;
-  border-radius: 50%;
-}
-#profiles_show .stat_names .stat_name a[href*='planned']:before {
-  content: 'today';
-}
-#profiles_show .stat_names .stat_name a[href*='=watching']:before {
-  content: 'play_arrow';
-}
-#profiles_show .stat_names .stat_name a[href*='=rewatching']:before {
-  content: 'replay';
-}
-#profiles_show .stat_names .stat_name a[href*='completed']:before {
-  content: 'done';
-}
-#profiles_show .stat_names .stat_name a[href*='on_hold']:before {
-  content: 'schedule';
-}
-#profiles_show .stat_names .stat_name a[href*='dropped']:before {
-  content: 'delete';
-}
-
-#profiles_show .stat_names .stat_name a:after  {
-  display: block !important;
-  position: absolute;
-  padding: 0.375rem 0.75rem;
-  margin: 0.25rem 0.75rem;
-  background-color: rgba(var(--popup-color), 0.9);
-  border-radius: 0.125rem;
-  color: rgb(var(--white-color));
-  font-size: .875rem;
-  line-height: 1.25rem;
-  white-space: nowrap;
-  z-index: 100;
-  pointer-events: none;
-  opacity: 0;
-  transition: .3s;
-  top: 0;
-  height: 20px;
-}
-#profiles_show .stat_names .stat_name a[href*='planned']:after {
-  content: 'Запланировано';
-}
-#profiles_show .stat_names .stat_name a[href*='=watching']:after {
-  content: 'Смотрю';
-}
-#profiles_show .b-stats_bar.manga .stat_names .stat_name a[href*='=watching']:after {
-  content: 'Читаю';
-}
-#profiles_show .stat_names .stat_name a[href*='completed']:after {
-  content: 'Просмотрено';
-}
-#profiles_show .b-stats_bar.manga .stat_names .stat_name a[href*='completed']:after {
-  content: 'Прочитано';
-}
-#profiles_show .stat_names .stat_name a[href*='=rewatching']:after {
-  content: 'Пересматриваю';
-}
-#profiles_show .b-stats_bar.manga .stat_names .stat_name a[href*='=rewatching']:after {
-  content: 'Перечитываю';
-}
-#profiles_show .stat_names .stat_name a[href*='on_hold']:after {
-  content: 'Отложено';
-}
-#profiles_show .stat_names .stat_name a[href*='dropped']:after {
-  content: 'Ближ. Запланированное';
-}
-
-#profiles_show .b-stats_bar .stat_names .stat_name .size {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 2px 4px;
-  margin: 6px 4px;
-  background: #5e6988;
-  border-radius: 2px;
-  color: white;
-  font-size: 14px;
-  line-height: .8;
-}
-
-#profiles_show .stat_names .stat_name a:hover::before, #profiles_show .stat_names .stat_name a.selected::before {
-  background-color: rgba(var(--popup-color), 1);
-  color: rgba(var(--light-color), 1);
-}
-#profiles_show .stat_names .stat_name a:hover::after {
-  transform: translateX(40px);
-  opacity: .9
-}
-
-.profile-head .c-info .c-lists-info .b-stats_bar .stat_names .stat_name::after {
-  display: none;
-}
-
