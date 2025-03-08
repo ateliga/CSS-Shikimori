@@ -351,6 +351,26 @@
 .p-profiles .cc-favourites .c-character a[href*="111337"] .image-cutter::before {
     content: "Лучшая жена";
 }
+/* Персонаж 10 — Ai Hoshino */
+/*Вертикальные постеры*/
+[href*="characters/118739-"], [data-href*="characters/188037/"], [src*="characters/188037/"], [srcset*="characters/188037/"] {
+  --show-default: 0;
+  --custom-image: url(https://wallpapercave.com/wp/wp12302118.jpg);
+}
+/*Горизонтальные постеры*/
+.p-profiles .cc-favourites .c-character a[href*="characters/188037-"] .image-cutter {
+    background: url(https://embed.pixiv.net/spotlight.php?id=8646&lang=en) no-repeat center / cover;
+}
+.p-profiles .cc-favourites .c-character:hover a[href*="characters/188037-"] .image-cutter {
+    background: url(https://media1.tenor.com/m/P9ve5F3p2FMAAAAd/oshi-no-ko-ai.gif) no-repeat center / cover;
+}
+.p-profiles .cc-favourites .c-character a[href*="188037-"] .image-decor::before {
+    content: "Ай Хосино";
+}
+.p-profiles .cc-favourites .c-character a[href*="188037-"] .image-cutter::before {
+    content: "Бесподобный Айдол";
+}
+
 body.p-achievements.p-profiles:after {
   background-image: url(https://images.hdqwalls.com/download/anime-girl-city-lights-4k-j6-1920x1080.jpg);
   background-color: rgba(53, 20, 0, 0.6);
@@ -599,6 +619,103 @@ html:has(.p-achievements):after {z-index: -1;}
 
 
 /*———————————————МЕЛОЧИ———————————————*/
+/* Анимация смены аватарки */
+@keyframes avatar-change {
+  0%, 49.9% {
+    background-image: url('https://media1.tenor.com/m/NDNnVu-Xlu4AAAAd/anime-frieren.gif'); /* Первая аватарка */
+  }
+  50%, 100% {
+    background-image: url('https://i.imgur.com/oecFzq9.gif'); /* Вторая аватарка */
+  }
+}/*https://i.pinimg.com/236x/5c/9f/f6/5c9ff63d8ff6c9f82af79e19cc0a77a9.jpg
+/* Применение анимации к аватарке пользователя */
+.p-profiles .profile-head[data-user-id="969640"] .c-brief .avatar::before {
+  content: '';
+  position: absolute;
+  top: 500;
+  left: 500;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  animation: avatar-change 90s infinite steps(1, end);
+}
+/* Основной стиль аватарки */
+.p-profiles .profile-head[data-user-id="969640"] .c-brief .avatar {
+  position: relative;
+  display: inline-block;
+  width: 100px; /* Размер */
+  height: 100px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  animation: avatar-change 90s infinite steps(1, end); /* Анимация смены аватарки */
+  margin: 0 auto; /* Центровка */
+  margin-bottom: 20px;
+}
+/* Свечение для аватарки с градиентами */
+.p-profiles .profile-head[data-user-id="969640"] .c-brief .avatar::after {
+  content: '';
+  position: absolute;
+  top: 0px; /* Для создания отступа вокруг аватарки */
+  left: 0px;
+  width: 160px; /* Размер больше аватарки */
+  height: 160px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  animation: avatar-glow 90s infinite steps(1, end); /* Анимация смены свечения */
+}
+/* Анимация свечения с градиентами */
+@keyframes avatar-glow {
+  0%, 49.9% {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.8), 
+                0 0 25px 10px rgba(225, 225, 225, 0.5); /* Градиент бело-серого свечения */
+  }
+  50%, 100% {
+    box-shadow: 0 0 15px 5px rgba(108, 48, 184, 0.8), 
+                0 0 25px 10px rgba(38, 38, 212, 0.5); /* Градиент фиолетово-синего свечения */
+  }
+} 
+/* Анимация свечения с градиентами */
+/*@keyframes avatar-glow {
+  0% {box-shadow:0 0 10px 10px #ffffff}
+    12.5% {box-shadow:0 0 20px 10px #ebe7dd}
+    25% {box-shadow:0 0 10px 10px #fcfcfa}
+    37.5% {box-shadow:0 0 20px 10px #f0eeeb}
+    50.0% {box-shadow:0 0 10px 10px #4e4ec7}
+    62.5% {box-shadow:0 0 20px 10px #323285}
+    75% {box-shadow:0 0 10px 10px #663a9e}
+    87.5% {box-shadow:0 0 20px 10px #5a1bab}
+    100% {box-shadow:0 0 10px 10px rgb(81,39,135)}
+}
+
+/* Увеличение аватарки при наведении */
+.p-profiles .profile-head[data-user-id="969640"] .c-brief .avatar:hover::before {
+  transform: scale(1.15);
+  transition: transform 1s ease;
+}
+
+/* Скрытие оригинальной аватарки */
+.p-profiles .profile-head[data-user-id="969640"] .c-brief .avatar img {
+  opacity: 0;
+}
+@media screen and (min-width: 1200px) {
+    #profiles_show .profile-actions {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-content: space-around;
+        align-items: center;
+        margin: 0;
+        right: -1450px;
+        bottom: 2.5rem;
+        width: 200px;
+        z-index: 22;
+        pointer-events: auto;
+    }
+}
 /*Шаринган в левом верхнем углу*/
 .l-top_menu-v2 .logo-container .glyph {
     background-image: url(https://avatanplus.com/files/resources/original/56e09c71a51eb1535d631c0c.png);
@@ -622,7 +739,7 @@ html:has(.p-achievements):after {z-index: -1;}
   }
 }
 /*Увеличение аватарки при наведении*/
-.menu-dropdown img {
+/*.menu-dropdown img {
   transition: transform 1s ease;
 }
 .menu-dropdown.active img  {
@@ -690,7 +807,7 @@ body {
     max-height: 100vh;
   }
 }
-#profiles_show .profile-head .c-brief .avatar img, .p-user_rates-index .l-menu .avatar img, body[data-user*=id:969640,] .l-top_menu-v2 .menu-dropdown.profile>span img, span.submenu-triangle.icon-avatar img {
+/*#profiles_show .profile-head .c-brief .avatar img, .p-user_rates-index .l-menu .avatar img, body[data-user*=id:969640,] .l-top_menu-v2 .menu-dropdown.profile>span img, span.submenu-triangle.icon-avatar img {
   content: url("https://media.tenor.com/images/836f0d117e634c0159bc6feebb1a233e/tenor.gif");
 }
 #profiles_show .profile-head .c-brief .avatar img, .p-user_rates-index .l-menu .avatar img {
@@ -718,6 +835,7 @@ body {
     87.5% {box-shadow:0 0 20px 10px #ff0000}
     100% {box-shadow:0 0 20px 10px rgb(60,208,131)}
 }
+
 /*Убираю образовавшийся скроллбар*/
 @media screen and (min-height: 720px) {
   .menu-dropdown.main .submenu::-webkit-scrollbar {
